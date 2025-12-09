@@ -163,6 +163,11 @@
             color: #06b6d4;
         }
 
+        .card-icon.client {
+            background: rgba(99, 102, 241, 0.15);
+            color: #6366f1;
+        }
+
         .card-icon.summary {
             background: rgba(16, 185, 129, 0.15);
             color: var(--accent-green);
@@ -409,8 +414,353 @@
             color: var(--text-primary);
         }
 
+        /* Tiers & Peak Seasons Styles */
+        .card-icon.tiers {
+            background: rgba(168, 85, 247, 0.15);
+            color: #a855f7;
+        }
+
+        .tier-row {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tier-row.base-tier {
+            border-color: rgba(59, 130, 246, 0.4);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .tier-row-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .tier-label {
+            font-weight: 600;
+            color: #a855f7;
+            font-size: 0.9rem;
+        }
+
+        .tier-row.base-tier .tier-label {
+            color: var(--accent-blue);
+        }
+
+        .tier-duration {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tier-duration .form-group {
+            margin-bottom: 0;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .position-adjustments {
+            margin-top: 0.75rem;
+        }
+
+        .position-adjustments-header {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .position-adjust-row {
+            display: grid;
+            grid-template-columns: 1.5fr 0.8fr 0.6fr 0.8fr 0.6fr 0.8fr 0.8fr;
+            gap: 0.5rem;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .position-adjust-row.header {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .position-adjust-row input,
+        .position-adjust-row select {
+            padding: 0.4rem;
+            font-size: 0.8rem;
+        }
+
+        .resulting-rate {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+            font-size: 0.8rem;
+        }
+
+        .add-tier-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px dashed rgba(168, 85, 247, 0.4);
+            border-radius: 8px;
+            color: #a855f7;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+        }
+
+        .add-tier-btn:hover {
+            background: rgba(168, 85, 247, 0.2);
+            border-color: #a855f7;
+        }
+
+        .delete-tier-btn {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .delete-tier-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: #ef4444;
+        }
+
+        .peak-season-box {
+            background: rgba(245, 158, 11, 0.08);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .peak-label {
+            font-weight: 600;
+            color: var(--accent-amber);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .peak-hours-table {
+            margin-top: 1rem;
+        }
+
+        .peak-hours-row {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 0.75rem;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .peak-hours-row.header {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .special-position-box {
+            background: var(--bg-input);
+            border: 1px dashed rgba(245, 158, 11, 0.4);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .duration-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .duration-toggle-btn {
+            padding: 0.4rem 0.8rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .duration-toggle-btn.active {
+            background: rgba(168, 85, 247, 0.15);
+            border-color: #a855f7;
+            color: #a855f7;
+        }
+
+        .tier-financial-summary {
+            background: var(--bg-input);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tier-summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tier-summary-row:last-child {
+            border-bottom: none;
+        }
+
+        .tier-summary-label {
+            color: var(--text-secondary);
+        }
+
+        .tier-summary-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
         .custom-position-input {
             margin-top: 0.5rem;
+        }
+
+        .client-info-card .card-header {
+            position: relative;
+        }
+
+        .optional-badge {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(100, 116, 139, 0.15);
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .site-address-row {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .site-address-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .site-address-label {
+            font-weight: 600;
+            color: var(--accent-blue);
+            font-size: 0.85rem;
+        }
+
+        .delete-address-btn {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .delete-address-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: #ef4444;
+        }
+
+        .add-address-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px dashed rgba(99, 102, 241, 0.4);
+            border-radius: 8px;
+            color: #6366f1;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+        }
+
+        .add-address-btn:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: #6366f1;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            resize: vertical;
+            transition: all 0.2s ease;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--border-focus);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .last-revised {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .revised-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .revised-date {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
         }
 
         .checkbox-group {
@@ -485,11 +835,11 @@
         }
 
         .result-card.cost .result-value {
-            color: var(--accent-amber);
+            color: var(--accent-red);
         }
 
         .result-card.revenue .result-value {
-            color: var(--accent-blue);
+            color: var(--accent-amber);
         }
 
         .breakdown-table {
@@ -737,6 +1087,68 @@
         </header>
 
         <div class="main-grid">
+            <!-- Client Information Section -->
+            <div class="card client-info-card">
+                <div class="card-header">
+                    <div class="card-icon client">📋</div>
+                    <h2 class="card-title">Client Information</h2>
+                    <span class="optional-badge">Optional</span>
+                </div>
+
+                <div class="client-info-content">
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Site Name</label>
+                            <input type="text" id="siteName" placeholder="e.g., Corporate Headquarters">
+                        </div>
+                        <div class="form-group">
+                            <label>Point of Contact</label>
+                            <input type="text" id="contactName" placeholder="Full Name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="contactEmail" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" id="contactPhone" placeholder="(555) 123-4567">
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <h3 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Site Addresses</h3>
+
+                    <div id="siteAddressRows">
+                        <!-- Site address rows will be added here -->
+                    </div>
+
+                    <button type="button" class="add-address-btn" onclick="addSiteAddressRow()">
+                        + Add Site Address
+                    </button>
+
+                    <div class="section-divider"></div>
+
+                    <div class="form-group">
+                        <label>Billing Address</label>
+                        <textarea id="billingAddress" rows="2" placeholder="Enter billing address (if different from site address)"></textarea>
+                    </div>
+
+                    <label class="checkbox-group" style="margin-top: 0.5rem;">
+                        <input type="checkbox" id="billingSameAsSite" onchange="toggleBillingAddress()">
+                        <span class="checkbox-label">Billing address same as primary site address</span>
+                    </label>
+
+                    <div class="last-revised">
+                        <span class="revised-label">Last Revised:</span>
+                        <span class="revised-date" id="lastRevisedDate"></span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Contract Duration -->
             <div class="card">
                 <div class="card-header">
@@ -944,6 +1356,186 @@
                         <input type="checkbox" id="billExpensesToCustomer" checked onchange="calculate()">
                         <span class="checkbox-label">Bill expenses to customer (pass-through at cost)</span>
                     </label>
+                </div>
+            </div>
+
+            <!-- Tiers & Peak Seasons Section -->
+            <div class="card" id="tiersPeakCard">
+                <div class="card-header">
+                    <div class="card-icon tiers">📈</div>
+                    <h2 class="card-title">Tiers & Peak Seasons</h2>
+                    <span class="optional-badge">Optional</span>
+                </div>
+
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">
+                    Configure rate increases over time and/or special peak season adjustments.
+                </p>
+
+                <label class="checkbox-group">
+                    <input type="checkbox" id="enableTiers" onchange="toggleTiersSection()">
+                    <span class="checkbox-label">Enable tiered pricing (incremental rate increases)</span>
+                </label>
+
+                <label class="checkbox-group" style="margin-top: 0.5rem;">
+                    <input type="checkbox" id="enablePeakSeason" onchange="togglePeakSection()">
+                    <span class="checkbox-label">Enable peak season adjustments</span>
+                </label>
+
+                <!-- Tiers Configuration -->
+                <div id="tiersSection" class="hidden">
+                    <div class="section-divider"></div>
+                    <h3 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Tier Configuration</h3>
+
+                    <div id="tierRows">
+                        <!-- Base tier (Tier 1) is always present but read-only -->
+                        <div class="tier-row base-tier" id="tier-base">
+                            <div class="tier-row-header">
+                                <span class="tier-label">📍 Base Rates (Tier 1)</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem;">
+                                Base rates are defined in the Physical Personnel section above. Add tiers below for scheduled increases.
+                            </p>
+                            <div class="tier-duration">
+                                <div class="form-group">
+                                    <label>Duration</label>
+                                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                                        <span style="color: var(--text-secondary); font-size: 0.85rem;">From contract start until Tier 2 begins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Additional tiers will be added here -->
+                    </div>
+
+                    <button type="button" class="add-tier-btn" onclick="addTierRow()">
+                        + Add Tier
+                    </button>
+                </div>
+
+                <!-- Peak Season Configuration -->
+                <div id="peakSection" class="hidden">
+                    <div class="section-divider"></div>
+                    <h3 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Peak Season Configuration</h3>
+
+                    <div class="peak-season-box">
+                        <div class="peak-label">🔥 Peak Season</div>
+
+                        <div class="duration-toggle">
+                            <button type="button" class="duration-toggle-btn active" id="peakDurationMonths" onclick="togglePeakDurationType('months')">By Months</button>
+                            <button type="button" class="duration-toggle-btn" id="peakDurationDates" onclick="togglePeakDurationType('dates')">By Dates</button>
+                        </div>
+
+                        <div class="row" id="peakMonthsInputs">
+                            <div class="form-group">
+                                <label>Start Month</label>
+                                <select id="peakStartMonth" onchange="calculatePeakFinancials()">
+                                    <option value="1">Month 1</option>
+                                    <option value="2">Month 2</option>
+                                    <option value="3">Month 3</option>
+                                    <option value="4">Month 4</option>
+                                    <option value="5">Month 5</option>
+                                    <option value="6">Month 6</option>
+                                    <option value="7">Month 7</option>
+                                    <option value="8">Month 8</option>
+                                    <option value="9">Month 9</option>
+                                    <option value="10">Month 10</option>
+                                    <option value="11">Month 11</option>
+                                    <option value="12">Month 12</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>End Month</label>
+                                <select id="peakEndMonth" onchange="calculatePeakFinancials()">
+                                    <option value="1">Month 1</option>
+                                    <option value="2">Month 2</option>
+                                    <option value="3">Month 3</option>
+                                    <option value="4">Month 4</option>
+                                    <option value="5">Month 5</option>
+                                    <option value="6">Month 6</option>
+                                    <option value="7">Month 7</option>
+                                    <option value="8">Month 8</option>
+                                    <option value="9">Month 9</option>
+                                    <option value="10">Month 10</option>
+                                    <option value="11">Month 11</option>
+                                    <option value="12">Month 12</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row hidden" id="peakDatesInputs">
+                            <div class="form-group">
+                                <label>Start Date</label>
+                                <input type="date" id="peakStartDate" onchange="calculatePeakFinancials()">
+                            </div>
+                            <div class="form-group">
+                                <label>End Date</label>
+                                <input type="date" id="peakEndDate" onchange="calculatePeakFinancials()">
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 1rem;">
+                            <label>Apply Peak Rates To</label>
+                            <select id="peakApplyTo" onchange="calculatePeakFinancials()">
+                                <option value="base">Base Rates (Tier 1)</option>
+                                <option value="current">Current Tier Rates (at time of peak)</option>
+                            </select>
+                        </div>
+
+                        <div class="peak-hours-table">
+                            <div class="position-adjustments-header">Hours Override Per Position</div>
+                            <div class="peak-hours-row header">
+                                <span>Position</span>
+                                <span>Normal Hours</span>
+                                <span>Peak Hours</span>
+                            </div>
+                            <div id="peakHoursRows">
+                                <!-- Peak hours rows populated dynamically -->
+                            </div>
+                        </div>
+
+                        <label class="checkbox-group" style="margin-top: 1rem;">
+                            <input type="checkbox" id="enableSpecialPosition" onchange="toggleSpecialPosition()">
+                            <span class="checkbox-label">Add temporary position for peak season only</span>
+                        </label>
+
+                        <div id="specialPositionSection" class="special-position-box hidden">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label>Position Name</label>
+                                    <input type="text" id="specialPositionName" placeholder="e.g., Holiday Security" onchange="calculatePeakFinancials()">
+                                </div>
+                                <div class="form-group">
+                                    <label>Hours</label>
+                                    <input type="number" id="specialPositionHours" value="40" min="0" onchange="calculatePeakFinancials()">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label>Pay Rate</label>
+                                    <div class="input-group">
+                                        <span class="input-prefix">$</span>
+                                        <input type="number" id="specialPositionPayRate" value="20" step="0.01" min="0" onchange="calculatePeakFinancials()">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Bill Rate</label>
+                                    <div class="input-group">
+                                        <span class="input-prefix">$</span>
+                                        <input type="number" id="specialPositionBillRate" value="28" step="0.01" min="0" onchange="calculatePeakFinancials()">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tier & Peak Financial Preview -->
+                <div id="tierPeakSummary" class="hidden">
+                    <div class="section-divider"></div>
+                    <h3 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Tier & Peak Financial Preview</h3>
+                    <div class="tier-financial-summary" id="tierFinancialPreview">
+                        <!-- Populated dynamically -->
+                    </div>
                 </div>
             </div>
 
@@ -1438,6 +2030,164 @@
     </div>
 
     <script>
+        // Client Information Functions
+        let siteAddressCounter = 0;
+
+        function initializeClientInfo() {
+            // Set last revised date
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('lastRevisedDate').textContent = today.toLocaleDateString('en-US', options);
+            
+            // Add first site address row
+            if (document.getElementById('siteAddressRows').children.length === 0) {
+                addSiteAddressRow(true);
+            }
+        }
+
+        function addSiteAddressRow(isPrimary = false) {
+            siteAddressCounter++;
+            const addressRows = document.getElementById('siteAddressRows');
+            const rowIndex = siteAddressCounter;
+            const rowNumber = addressRows.children.length + 1;
+            
+            const addressDiv = document.createElement('div');
+            addressDiv.className = 'site-address-row';
+            addressDiv.id = `siteAddress-${rowIndex}`;
+            
+            const labelText = rowNumber === 1 ? 'Primary Site Address' : `Site Address #${rowNumber}`;
+            const showDelete = rowNumber > 1;
+            
+            addressDiv.innerHTML = `
+                <div class="site-address-header">
+                    <span class="site-address-label">${labelText}</span>
+                    ${showDelete ? `<button type="button" class="delete-address-btn" onclick="deleteSiteAddressRow(${rowIndex})">✕ Remove</button>` : ''}
+                </div>
+                <div class="form-group" style="margin-bottom: 0.75rem;">
+                    <label>Street Address</label>
+                    <input type="text" id="streetAddress-${rowIndex}" placeholder="123 Main Street">
+                </div>
+                <div class="row">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>City</label>
+                        <input type="text" id="city-${rowIndex}" placeholder="City">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>State</label>
+                        <input type="text" id="state-${rowIndex}" placeholder="State">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>ZIP Code</label>
+                        <input type="text" id="zip-${rowIndex}" placeholder="12345">
+                    </div>
+                </div>
+            `;
+            
+            addressRows.appendChild(addressDiv);
+            renumberAddresses();
+        }
+
+        function deleteSiteAddressRow(rowIndex) {
+            const addressDiv = document.getElementById(`siteAddress-${rowIndex}`);
+            if (addressDiv) {
+                addressDiv.remove();
+                renumberAddresses();
+            }
+        }
+
+        function renumberAddresses() {
+            const addressRows = document.getElementById('siteAddressRows');
+            const rows = addressRows.querySelectorAll('.site-address-row');
+            rows.forEach((row, index) => {
+                const labelSpan = row.querySelector('.site-address-label');
+                if (labelSpan) {
+                    labelSpan.textContent = index === 0 ? 'Primary Site Address' : `Site Address #${index + 1}`;
+                }
+                // Update delete button visibility
+                const deleteBtn = row.querySelector('.delete-address-btn');
+                if (index === 0 && deleteBtn) {
+                    deleteBtn.remove();
+                } else if (index > 0 && !deleteBtn) {
+                    const rowId = row.id.split('-')[1];
+                    const header = row.querySelector('.site-address-header');
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'delete-address-btn';
+                    btn.onclick = function() { deleteSiteAddressRow(rowId); };
+                    btn.innerHTML = '✕ Remove';
+                    header.appendChild(btn);
+                }
+            });
+        }
+
+        function toggleBillingAddress() {
+            const sameAsSite = document.getElementById('billingSameAsSite').checked;
+            const billingTextarea = document.getElementById('billingAddress');
+            
+            if (sameAsSite) {
+                // Get primary site address
+                const firstAddressRow = document.querySelector('.site-address-row');
+                if (firstAddressRow) {
+                    const rowId = firstAddressRow.id.split('-')[1];
+                    const street = document.getElementById(`streetAddress-${rowId}`)?.value || '';
+                    const city = document.getElementById(`city-${rowId}`)?.value || '';
+                    const state = document.getElementById(`state-${rowId}`)?.value || '';
+                    const zip = document.getElementById(`zip-${rowId}`)?.value || '';
+                    
+                    const fullAddress = [street, city, state, zip].filter(Boolean).join(', ');
+                    billingTextarea.value = fullAddress;
+                }
+                billingTextarea.disabled = true;
+                billingTextarea.style.opacity = '0.6';
+            } else {
+                billingTextarea.disabled = false;
+                billingTextarea.style.opacity = '1';
+            }
+        }
+
+        function getClientInfo() {
+            const siteName = document.getElementById('siteName')?.value || '';
+            const contactName = document.getElementById('contactName')?.value || '';
+            const contactEmail = document.getElementById('contactEmail')?.value || '';
+            const contactPhone = document.getElementById('contactPhone')?.value || '';
+            const billingAddress = document.getElementById('billingAddress')?.value || '';
+            const lastRevised = document.getElementById('lastRevisedDate')?.textContent || '';
+            
+            // Get all site addresses
+            const siteAddresses = [];
+            const addressRows = document.getElementById('siteAddressRows');
+            const rows = addressRows.querySelectorAll('.site-address-row');
+            
+            rows.forEach((row, index) => {
+                const rowId = row.id.split('-')[1];
+                const street = document.getElementById(`streetAddress-${rowId}`)?.value || '';
+                const city = document.getElementById(`city-${rowId}`)?.value || '';
+                const state = document.getElementById(`state-${rowId}`)?.value || '';
+                const zip = document.getElementById(`zip-${rowId}`)?.value || '';
+                
+                if (street || city || state || zip) {
+                    siteAddresses.push({
+                        label: index === 0 ? 'Primary Site' : `Site #${index + 1}`,
+                        street: street,
+                        city: city,
+                        state: state,
+                        zip: zip,
+                        full: [street, city, state, zip].filter(Boolean).join(', ')
+                    });
+                }
+            });
+            
+            return {
+                siteName,
+                contactName,
+                contactEmail,
+                contactPhone,
+                billingAddress,
+                siteAddresses,
+                lastRevised
+            };
+        }
+
         function formatCurrency(amount) {
             return new Intl.NumberFormat('en-US', {
                 style: 'currency',
@@ -1732,6 +2482,516 @@
             });
             
             return positions;
+        }
+
+        // Tiers & Peak Seasons Functions
+        let tierCounter = 1; // Start at 1 since base is tier-base
+
+        function toggleTiersSection() {
+            const enabled = document.getElementById('enableTiers').checked;
+            const section = document.getElementById('tiersSection');
+            const summarySection = document.getElementById('tierPeakSummary');
+            
+            if (enabled) {
+                section.classList.remove('hidden');
+                updateTierPeakSummaryVisibility();
+            } else {
+                section.classList.add('hidden');
+                updateTierPeakSummaryVisibility();
+            }
+            calculate();
+        }
+
+        function togglePeakSection() {
+            const enabled = document.getElementById('enablePeakSeason').checked;
+            const section = document.getElementById('peakSection');
+            
+            if (enabled) {
+                section.classList.remove('hidden');
+                populatePeakHoursRows();
+                updateTierPeakSummaryVisibility();
+            } else {
+                section.classList.add('hidden');
+                updateTierPeakSummaryVisibility();
+            }
+            calculate();
+        }
+
+        function updateTierPeakSummaryVisibility() {
+            const tiersEnabled = document.getElementById('enableTiers').checked;
+            const peakEnabled = document.getElementById('enablePeakSeason').checked;
+            const summarySection = document.getElementById('tierPeakSummary');
+            
+            if (tiersEnabled || peakEnabled) {
+                summarySection.classList.remove('hidden');
+                updateTierPeakFinancialPreview();
+            } else {
+                summarySection.classList.add('hidden');
+            }
+        }
+
+        function addTierRow() {
+            tierCounter++;
+            const tierRows = document.getElementById('tierRows');
+            const tierNumber = tierCounter;
+            const positions = getPositionData();
+            
+            const tierDiv = document.createElement('div');
+            tierDiv.className = 'tier-row';
+            tierDiv.id = `tier-${tierNumber}`;
+            
+            // Build position adjustments HTML
+            let positionAdjustmentsHtml = '';
+            if (positions.length > 0) {
+                positionAdjustmentsHtml = `
+                    <div class="position-adjustments">
+                        <div class="position-adjustments-header">Rate Adjustments Per Position</div>
+                        <div class="position-adjust-row header">
+                            <span>Position</span>
+                            <span>Pay Type</span>
+                            <span>Pay Adj</span>
+                            <span>Bill Type</span>
+                            <span>Bill Adj</span>
+                            <span>New Pay</span>
+                            <span>New Bill</span>
+                        </div>
+                        ${positions.map((pos, idx) => `
+                            <div class="position-adjust-row" data-position-index="${idx}">
+                                <span>${pos.name}</span>
+                                <select id="tier${tierNumber}-pos${idx}-payType" onchange="updateTierPositionRates(${tierNumber}, ${idx})">
+                                    <option value="percent">%</option>
+                                    <option value="flat">$</option>
+                                </select>
+                                <input type="number" id="tier${tierNumber}-pos${idx}-payAdj" value="3" step="0.01" min="0" onchange="updateTierPositionRates(${tierNumber}, ${idx})" style="width: 60px;">
+                                <select id="tier${tierNumber}-pos${idx}-billType" onchange="updateTierPositionRates(${tierNumber}, ${idx})">
+                                    <option value="percent">%</option>
+                                    <option value="flat">$</option>
+                                </select>
+                                <input type="number" id="tier${tierNumber}-pos${idx}-billAdj" value="3" step="0.01" min="0" onchange="updateTierPositionRates(${tierNumber}, ${idx})" style="width: 60px;">
+                                <span class="resulting-rate" id="tier${tierNumber}-pos${idx}-newPay">$0.00</span>
+                                <span class="resulting-rate" id="tier${tierNumber}-pos${idx}-newBill">$0.00</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                positionAdjustmentsHtml = '<p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 1rem;">Add positions in Physical Personnel section to configure tier adjustments.</p>';
+            }
+            
+            tierDiv.innerHTML = `
+                <div class="tier-row-header">
+                    <span class="tier-label">Tier ${tierNumber}</span>
+                    <button type="button" class="delete-tier-btn" onclick="deleteTierRow(${tierNumber})">✕ Remove</button>
+                </div>
+                <div class="duration-toggle">
+                    <button type="button" class="duration-toggle-btn active" id="tier${tierNumber}-durationMonths" onclick="toggleTierDurationType(${tierNumber}, 'months')">By Months</button>
+                    <button type="button" class="duration-toggle-btn" id="tier${tierNumber}-durationDates" onclick="toggleTierDurationType(${tierNumber}, 'dates')">By Dates</button>
+                </div>
+                <div class="tier-duration" id="tier${tierNumber}-monthsInputs">
+                    <div class="form-group">
+                        <label>Start Month</label>
+                        <input type="number" id="tier${tierNumber}-startMonth" value="${(tierNumber - 1) * 6 + 1}" min="1" onchange="calculate()">
+                    </div>
+                    <div class="form-group">
+                        <label>End Month</label>
+                        <input type="number" id="tier${tierNumber}-endMonth" value="${tierNumber * 6}" min="1" onchange="calculate()">
+                    </div>
+                </div>
+                <div class="tier-duration hidden" id="tier${tierNumber}-datesInputs">
+                    <div class="form-group">
+                        <label>Start Date</label>
+                        <input type="date" id="tier${tierNumber}-startDate" onchange="calculate()">
+                    </div>
+                    <div class="form-group">
+                        <label>End Date</label>
+                        <input type="date" id="tier${tierNumber}-endDate" onchange="calculate()">
+                    </div>
+                </div>
+                ${positionAdjustmentsHtml}
+            `;
+            
+            tierRows.appendChild(tierDiv);
+            
+            // Initialize the resulting rates
+            positions.forEach((pos, idx) => {
+                updateTierPositionRates(tierNumber, idx);
+            });
+            
+            renumberTiers();
+            calculate();
+        }
+
+        function deleteTierRow(tierNumber) {
+            const tierDiv = document.getElementById(`tier-${tierNumber}`);
+            if (tierDiv) {
+                tierDiv.remove();
+                renumberTiers();
+                calculate();
+            }
+        }
+
+        function renumberTiers() {
+            const tierRows = document.getElementById('tierRows');
+            const tiers = tierRows.querySelectorAll('.tier-row:not(.base-tier)');
+            tiers.forEach((tier, index) => {
+                const labelSpan = tier.querySelector('.tier-label');
+                if (labelSpan) {
+                    labelSpan.textContent = `Tier ${index + 2}`;
+                }
+            });
+        }
+
+        function toggleTierDurationType(tierNumber, type) {
+            const monthsBtn = document.getElementById(`tier${tierNumber}-durationMonths`);
+            const datesBtn = document.getElementById(`tier${tierNumber}-durationDates`);
+            const monthsInputs = document.getElementById(`tier${tierNumber}-monthsInputs`);
+            const datesInputs = document.getElementById(`tier${tierNumber}-datesInputs`);
+            
+            if (type === 'months') {
+                monthsBtn.classList.add('active');
+                datesBtn.classList.remove('active');
+                monthsInputs.classList.remove('hidden');
+                datesInputs.classList.add('hidden');
+            } else {
+                monthsBtn.classList.remove('active');
+                datesBtn.classList.add('active');
+                monthsInputs.classList.add('hidden');
+                datesInputs.classList.remove('hidden');
+            }
+            calculate();
+        }
+
+        function togglePeakDurationType(type) {
+            const monthsBtn = document.getElementById('peakDurationMonths');
+            const datesBtn = document.getElementById('peakDurationDates');
+            const monthsInputs = document.getElementById('peakMonthsInputs');
+            const datesInputs = document.getElementById('peakDatesInputs');
+            
+            if (type === 'months') {
+                monthsBtn.classList.add('active');
+                datesBtn.classList.remove('active');
+                monthsInputs.classList.remove('hidden');
+                datesInputs.classList.add('hidden');
+            } else {
+                monthsBtn.classList.remove('active');
+                datesBtn.classList.add('active');
+                monthsInputs.classList.add('hidden');
+                datesInputs.classList.remove('hidden');
+            }
+            calculatePeakFinancials();
+        }
+
+        function updateTierPositionRates(tierNumber, positionIndex) {
+            const positions = getPositionData();
+            if (positionIndex >= positions.length) return;
+            
+            const pos = positions[positionIndex];
+            const prevTierRates = getPreviousTierRates(tierNumber, positionIndex);
+            
+            const payType = document.getElementById(`tier${tierNumber}-pos${positionIndex}-payType`)?.value || 'percent';
+            const payAdj = parseFloat(document.getElementById(`tier${tierNumber}-pos${positionIndex}-payAdj`)?.value) || 0;
+            const billType = document.getElementById(`tier${tierNumber}-pos${positionIndex}-billType`)?.value || 'percent';
+            const billAdj = parseFloat(document.getElementById(`tier${tierNumber}-pos${positionIndex}-billAdj`)?.value) || 0;
+            
+            let newPay, newBill;
+            
+            if (payType === 'percent') {
+                newPay = prevTierRates.payRate * (1 + payAdj / 100);
+            } else {
+                newPay = prevTierRates.payRate + payAdj;
+            }
+            
+            if (billType === 'percent') {
+                newBill = prevTierRates.billRate * (1 + billAdj / 100);
+            } else {
+                newBill = prevTierRates.billRate + billAdj;
+            }
+            
+            const newPayEl = document.getElementById(`tier${tierNumber}-pos${positionIndex}-newPay`);
+            const newBillEl = document.getElementById(`tier${tierNumber}-pos${positionIndex}-newBill`);
+            
+            if (newPayEl) newPayEl.textContent = '$' + newPay.toFixed(2);
+            if (newBillEl) newBillEl.textContent = '$' + newBill.toFixed(2);
+            
+            updateTierPeakFinancialPreview();
+            calculate();
+        }
+
+        function getPreviousTierRates(tierNumber, positionIndex) {
+            const positions = getPositionData();
+            if (positionIndex >= positions.length) return { payRate: 0, billRate: 0 };
+            
+            const pos = positions[positionIndex];
+            
+            if (tierNumber <= 2) {
+                // Previous tier is base
+                return { payRate: pos.payRate, billRate: pos.billRate };
+            }
+            
+            // Get rates from previous tier
+            const prevTierNumber = tierNumber - 1;
+            const prevPayEl = document.getElementById(`tier${prevTierNumber}-pos${positionIndex}-newPay`);
+            const prevBillEl = document.getElementById(`tier${prevTierNumber}-pos${positionIndex}-newBill`);
+            
+            if (prevPayEl && prevBillEl) {
+                const prevPay = parseFloat(prevPayEl.textContent.replace('$', '')) || pos.payRate;
+                const prevBill = parseFloat(prevBillEl.textContent.replace('$', '')) || pos.billRate;
+                return { payRate: prevPay, billRate: prevBill };
+            }
+            
+            return { payRate: pos.payRate, billRate: pos.billRate };
+        }
+
+        function getTierRatesForPosition(tierNumber, positionIndex) {
+            const positions = getPositionData();
+            if (positionIndex >= positions.length) return { payRate: 0, billRate: 0 };
+            
+            const pos = positions[positionIndex];
+            
+            if (tierNumber <= 1) {
+                return { payRate: pos.payRate, billRate: pos.billRate };
+            }
+            
+            const payEl = document.getElementById(`tier${tierNumber}-pos${positionIndex}-newPay`);
+            const billEl = document.getElementById(`tier${tierNumber}-pos${positionIndex}-newBill`);
+            
+            if (payEl && billEl) {
+                const pay = parseFloat(payEl.textContent.replace('$', '')) || pos.payRate;
+                const bill = parseFloat(billEl.textContent.replace('$', '')) || pos.billRate;
+                return { payRate: pay, billRate: bill };
+            }
+            
+            return { payRate: pos.payRate, billRate: pos.billRate };
+        }
+
+        function populatePeakHoursRows() {
+            const positions = getPositionData();
+            const peakHoursRows = document.getElementById('peakHoursRows');
+            
+            if (positions.length === 0) {
+                peakHoursRows.innerHTML = '<p style="color: var(--text-secondary); font-size: 0.8rem;">Add positions in Physical Personnel section first.</p>';
+                return;
+            }
+            
+            peakHoursRows.innerHTML = positions.map((pos, idx) => `
+                <div class="peak-hours-row">
+                    <span>${pos.name}</span>
+                    <span style="color: var(--text-secondary);">${pos.hours} hrs</span>
+                    <input type="number" id="peakHours-${idx}" value="${pos.hours}" min="0" step="0.5" onchange="calculatePeakFinancials()">
+                </div>
+            `).join('');
+        }
+
+        function toggleSpecialPosition() {
+            const enabled = document.getElementById('enableSpecialPosition').checked;
+            const section = document.getElementById('specialPositionSection');
+            
+            if (enabled) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+            calculatePeakFinancials();
+        }
+
+        function calculatePeakFinancials() {
+            updateTierPeakFinancialPreview();
+            calculate();
+        }
+
+        function getTierData() {
+            const tiersEnabled = document.getElementById('enableTiers').checked;
+            if (!tiersEnabled) return [];
+            
+            const tierRows = document.getElementById('tierRows');
+            const tiers = tierRows.querySelectorAll('.tier-row:not(.base-tier)');
+            const positions = getPositionData();
+            
+            const tierData = [];
+            
+            // Base tier (always exists)
+            tierData.push({
+                number: 1,
+                name: 'Base Rates (Tier 1)',
+                startMonth: 1,
+                endMonth: tiers.length > 0 ? (parseInt(document.getElementById(`tier-${tiers[0].id.split('-')[1]}`)?.querySelector('[id$="-startMonth"]')?.value) - 1 || 6) : 12,
+                positions: positions.map(pos => ({
+                    name: pos.name,
+                    hours: pos.hours,
+                    payRate: pos.payRate,
+                    billRate: pos.billRate
+                }))
+            });
+            
+            // Additional tiers
+            tiers.forEach((tier, index) => {
+                const tierId = tier.id.split('-')[1];
+                const startMonth = parseInt(document.getElementById(`tier${tierId}-startMonth`)?.value) || ((index + 1) * 6 + 1);
+                const endMonth = parseInt(document.getElementById(`tier${tierId}-endMonth`)?.value) || ((index + 2) * 6);
+                
+                const tierPositions = positions.map((pos, posIdx) => {
+                    const rates = getTierRatesForPosition(parseInt(tierId), posIdx);
+                    return {
+                        name: pos.name,
+                        hours: pos.hours,
+                        payRate: rates.payRate,
+                        billRate: rates.billRate
+                    };
+                });
+                
+                tierData.push({
+                    number: index + 2,
+                    name: `Tier ${index + 2}`,
+                    startMonth: startMonth,
+                    endMonth: endMonth,
+                    positions: tierPositions
+                });
+            });
+            
+            return tierData;
+        }
+
+        function getPeakData() {
+            const peakEnabled = document.getElementById('enablePeakSeason').checked;
+            if (!peakEnabled) return null;
+            
+            const positions = getPositionData();
+            const durationMonthsActive = document.getElementById('peakDurationMonths').classList.contains('active');
+            const applyTo = document.getElementById('peakApplyTo').value;
+            
+            let startMonth, endMonth, startDate, endDate;
+            
+            if (durationMonthsActive) {
+                startMonth = parseInt(document.getElementById('peakStartMonth').value) || 1;
+                endMonth = parseInt(document.getElementById('peakEndMonth').value) || 1;
+            } else {
+                startDate = document.getElementById('peakStartDate').value;
+                endDate = document.getElementById('peakEndDate').value;
+            }
+            
+            const peakPositions = positions.map((pos, idx) => {
+                const peakHours = parseFloat(document.getElementById(`peakHours-${idx}`)?.value) || pos.hours;
+                return {
+                    name: pos.name,
+                    normalHours: pos.hours,
+                    peakHours: peakHours,
+                    payRate: pos.payRate,
+                    billRate: pos.billRate
+                };
+            });
+            
+            let specialPosition = null;
+            if (document.getElementById('enableSpecialPosition').checked) {
+                specialPosition = {
+                    name: document.getElementById('specialPositionName').value || 'Special Position',
+                    hours: parseFloat(document.getElementById('specialPositionHours').value) || 0,
+                    payRate: parseFloat(document.getElementById('specialPositionPayRate').value) || 0,
+                    billRate: parseFloat(document.getElementById('specialPositionBillRate').value) || 0
+                };
+            }
+            
+            return {
+                durationByMonths: durationMonthsActive,
+                startMonth: startMonth,
+                endMonth: endMonth,
+                startDate: startDate,
+                endDate: endDate,
+                applyTo: applyTo,
+                positions: peakPositions,
+                specialPosition: specialPosition
+            };
+        }
+
+        function updateTierPeakFinancialPreview() {
+            const previewEl = document.getElementById('tierFinancialPreview');
+            const tiersEnabled = document.getElementById('enableTiers').checked;
+            const peakEnabled = document.getElementById('enablePeakSeason').checked;
+            
+            if (!tiersEnabled && !peakEnabled) {
+                previewEl.innerHTML = '<p style="color: var(--text-secondary);">Enable tiers or peak season to see financial preview.</p>';
+                return;
+            }
+            
+            const tierData = getTierData();
+            const peakData = getPeakData();
+            const weeksPerMonth = parseFloat(document.getElementById('weeksPerMonth').value) || 4.345;
+            
+            let html = '';
+            
+            // Tier breakdown
+            if (tiersEnabled && tierData.length > 0) {
+                html += '<div style="margin-bottom: 1rem;"><strong style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase;">Tier Breakdown</strong></div>';
+                
+                tierData.forEach(tier => {
+                    let tierWeeklyPay = 0;
+                    let tierWeeklyBill = 0;
+                    
+                    tier.positions.forEach(pos => {
+                        tierWeeklyPay += pos.hours * pos.payRate;
+                        tierWeeklyBill += pos.hours * pos.billRate;
+                    });
+                    
+                    const tierMonths = tier.endMonth - tier.startMonth + 1;
+                    const tierTotalPay = tierWeeklyPay * weeksPerMonth * tierMonths;
+                    const tierTotalBill = tierWeeklyBill * weeksPerMonth * tierMonths;
+                    const tierProfit = tierTotalBill - tierTotalPay;
+                    
+                    html += `
+                        <div class="tier-summary-row">
+                            <span class="tier-summary-label">${tier.name} (Months ${tier.startMonth}-${tier.endMonth})</span>
+                            <span class="tier-summary-value" style="color: var(--accent-green);">Profit: ${formatCurrency(tierProfit)}</span>
+                        </div>
+                    `;
+                });
+            }
+            
+            // Peak breakdown
+            if (peakEnabled && peakData) {
+                html += '<div style="margin-top: 1rem; margin-bottom: 1rem;"><strong style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase;">Peak Season Impact</strong></div>';
+                
+                let peakWeeklyPay = 0;
+                let peakWeeklyBill = 0;
+                let normalWeeklyPay = 0;
+                let normalWeeklyBill = 0;
+                
+                peakData.positions.forEach(pos => {
+                    peakWeeklyPay += pos.peakHours * pos.payRate;
+                    peakWeeklyBill += pos.peakHours * pos.billRate;
+                    normalWeeklyPay += pos.normalHours * pos.payRate;
+                    normalWeeklyBill += pos.normalHours * pos.billRate;
+                });
+                
+                if (peakData.specialPosition) {
+                    peakWeeklyPay += peakData.specialPosition.hours * peakData.specialPosition.payRate;
+                    peakWeeklyBill += peakData.specialPosition.hours * peakData.specialPosition.billRate;
+                }
+                
+                const peakMonths = peakData.durationByMonths ? (peakData.endMonth - peakData.startMonth + 1) : 1;
+                const additionalRevenue = (peakWeeklyBill - normalWeeklyBill) * weeksPerMonth * peakMonths;
+                const additionalCost = (peakWeeklyPay - normalWeeklyPay) * weeksPerMonth * peakMonths;
+                const additionalProfit = additionalRevenue - additionalCost;
+                
+                html += `
+                    <div class="tier-summary-row">
+                        <span class="tier-summary-label">Peak Period ${peakData.durationByMonths ? `(Months ${peakData.startMonth}-${peakData.endMonth})` : ''}</span>
+                        <span></span>
+                    </div>
+                    <div class="tier-summary-row">
+                        <span class="tier-summary-label" style="padding-left: 1rem;">Additional Revenue</span>
+                        <span class="tier-summary-value" style="color: var(--accent-amber);">${formatCurrency(additionalRevenue)}</span>
+                    </div>
+                    <div class="tier-summary-row">
+                        <span class="tier-summary-label" style="padding-left: 1rem;">Additional Cost</span>
+                        <span class="tier-summary-value" style="color: var(--accent-red);">${formatCurrency(additionalCost)}</span>
+                    </div>
+                    <div class="tier-summary-row">
+                        <span class="tier-summary-label" style="padding-left: 1rem;">Additional Profit</span>
+                        <span class="tier-summary-value" style="color: var(--accent-green);">${formatCurrency(additionalProfit)}</span>
+                    </div>
+                `;
+            }
+            
+            previewEl.innerHTML = html || '<p style="color: var(--text-secondary);">Configure tiers or peak season to see preview.</p>';
         }
 
         function updateVisitCountOptions() {
@@ -2479,6 +3739,20 @@
         }
 
         function resetForm() {
+            // Client Information reset
+            document.getElementById('siteName').value = '';
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactPhone').value = '';
+            document.getElementById('billingAddress').value = '';
+            document.getElementById('billingAddress').disabled = false;
+            document.getElementById('billingAddress').style.opacity = '1';
+            document.getElementById('billingSameAsSite').checked = false;
+            // Reset site addresses - clear all and add one empty row
+            document.getElementById('siteAddressRows').innerHTML = '';
+            siteAddressCounter = 0;
+            addSiteAddressRow(true);
+            
             // Personnel reset - clear all position rows
             document.getElementById('positionRows').innerHTML = '';
             positionCounter = 0;
@@ -2499,6 +3773,35 @@
             document.getElementById('avgBillRate').textContent = '$0.00/hr';
             document.getElementById('avgMarkup').textContent = '1.00×';
             document.getElementById('personnelMargin').textContent = '0%';
+            
+            // Tiers & Peak Seasons reset
+            document.getElementById('enableTiers').checked = false;
+            document.getElementById('enablePeakSeason').checked = false;
+            document.getElementById('tiersSection').classList.add('hidden');
+            document.getElementById('peakSection').classList.add('hidden');
+            document.getElementById('tierPeakSummary').classList.add('hidden');
+            // Remove all tier rows except base
+            const tierRows = document.getElementById('tierRows');
+            const additionalTiers = tierRows.querySelectorAll('.tier-row:not(.base-tier)');
+            additionalTiers.forEach(tier => tier.remove());
+            tierCounter = 1;
+            // Reset peak season
+            document.getElementById('peakDurationMonths').classList.add('active');
+            document.getElementById('peakDurationDates').classList.remove('active');
+            document.getElementById('peakMonthsInputs').classList.remove('hidden');
+            document.getElementById('peakDatesInputs').classList.add('hidden');
+            document.getElementById('peakStartMonth').value = '1';
+            document.getElementById('peakEndMonth').value = '1';
+            document.getElementById('peakStartDate').value = '';
+            document.getElementById('peakEndDate').value = '';
+            document.getElementById('peakApplyTo').value = 'base';
+            document.getElementById('peakHoursRows').innerHTML = '';
+            document.getElementById('enableSpecialPosition').checked = false;
+            document.getElementById('specialPositionSection').classList.add('hidden');
+            document.getElementById('specialPositionName').value = '';
+            document.getElementById('specialPositionHours').value = '40';
+            document.getElementById('specialPositionPayRate').value = '20';
+            document.getElementById('specialPositionBillRate').value = '28';
             
             document.getElementById('equipmentCost').value = 0;
             document.getElementById('installHours').value = 0;
@@ -2564,6 +3867,44 @@
         }
 
         function printSummary() {
+            // Get client information
+            const clientInfo = getClientInfo();
+            
+            // Build client info HTML
+            let clientInfoHtml = '';
+            if (clientInfo.siteName || clientInfo.contactName || clientInfo.siteAddresses.length > 0) {
+                clientInfoHtml = '<div style="margin-bottom:30px;">' +
+                    '<h2 style="font-size:16px;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;margin-bottom:15px;padding-bottom:8px;border-bottom:1px solid #e2e8f0;">Client Information</h2>' +
+                    '<div style="background:#f8fafc;padding:15px 20px;border-radius:8px;">';
+                
+                if (clientInfo.siteName) {
+                    clientInfoHtml += '<p style="margin:5px 0;font-size:14px;"><strong>Site Name:</strong> ' + clientInfo.siteName + '</p>';
+                }
+                if (clientInfo.contactName) {
+                    clientInfoHtml += '<p style="margin:5px 0;font-size:14px;"><strong>Point of Contact:</strong> ' + clientInfo.contactName + '</p>';
+                }
+                if (clientInfo.contactEmail) {
+                    clientInfoHtml += '<p style="margin:5px 0;font-size:14px;"><strong>Email:</strong> ' + clientInfo.contactEmail + '</p>';
+                }
+                if (clientInfo.contactPhone) {
+                    clientInfoHtml += '<p style="margin:5px 0;font-size:14px;"><strong>Phone:</strong> ' + clientInfo.contactPhone + '</p>';
+                }
+                
+                if (clientInfo.siteAddresses.length > 0) {
+                    clientInfoHtml += '<div style="margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;">';
+                    clientInfo.siteAddresses.forEach(addr => {
+                        clientInfoHtml += '<p style="margin:5px 0;font-size:14px;"><strong>' + addr.label + ':</strong> ' + addr.full + '</p>';
+                    });
+                    clientInfoHtml += '</div>';
+                }
+                
+                if (clientInfo.billingAddress) {
+                    clientInfoHtml += '<p style="margin:10px 0 5px 0;font-size:14px;"><strong>Billing Address:</strong> ' + clientInfo.billingAddress + '</p>';
+                }
+                
+                clientInfoHtml += '</div></div>';
+            }
+            
             // Get current values
             const durationType = document.getElementById('durationType').value;
             const contractMonths = document.getElementById('contractLength').value;
@@ -2648,6 +3989,29 @@
                 }
             }
             
+            // Add tier information
+            if (document.getElementById('enableTiers').checked) {
+                const tierData = getTierData();
+                servicesIncluded.push('Tiered Pricing: ' + tierData.length + ' tier(s)');
+                tierData.forEach(tier => {
+                    servicesIncluded.push('  - ' + tier.name + ': Months ' + tier.startMonth + '-' + tier.endMonth);
+                });
+            }
+            
+            // Add peak season information
+            if (document.getElementById('enablePeakSeason').checked) {
+                const peakData = getPeakData();
+                if (peakData) {
+                    let peakDuration = peakData.durationByMonths 
+                        ? `Months ${peakData.startMonth}-${peakData.endMonth}`
+                        : `${peakData.startDate} to ${peakData.endDate}`;
+                    servicesIncluded.push('Peak Season: ' + peakDuration);
+                    if (peakData.specialPosition) {
+                        servicesIncluded.push('  - Special Position: ' + peakData.specialPosition.name + ' (' + peakData.specialPosition.hours + ' hrs)');
+                    }
+                }
+            }
+            
             const servicesHtml = servicesIncluded.map(function(s) { return '<p style="margin:5px 0;font-size:14px;">• ' + s + '</p>'; }).join('');
             const dateStr = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
             
@@ -2663,7 +4027,10 @@
                 '<style>@media print { body > *:not(#printContainer) { display: none !important; } #printContainer { position: static !important; } #printContent { position: static !important; } .no-print { display: none !important; } }</style>' +
                 '<div style="text-align:center;margin-bottom:40px;padding-bottom:20px;border-bottom:2px solid #3b82f6;">' +
                 '<h1 style="font-size:28px;color:#1e3a5f;margin-bottom:8px;">🛡️ Security Services Quote Summary</h1>' +
-                '<p style="color:#64748b;font-size:14px;">Generated on ' + dateStr + '</p></div>' +
+                '<p style="color:#64748b;font-size:14px;">Generated on ' + dateStr + '</p>' +
+                '<p style="color:#64748b;font-size:12px;">Last Revised: ' + clientInfo.lastRevised + '</p></div>' +
+                
+                clientInfoHtml +
                 
                 '<div style="margin-bottom:30px;">' +
                 '<h2 style="font-size:16px;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;margin-bottom:15px;padding-bottom:8px;border-bottom:1px solid #e2e8f0;">Contract Details</h2>' +
@@ -2684,16 +4051,16 @@
                 '<th style="padding:12px 15px;text-align:left;border-bottom:1px solid #e2e8f0;font-weight:600;font-size:13px;text-transform:uppercase;color:#64748b;">Contract Total</th>' +
                 '</tr></thead>' +
                 '<tbody>' +
-                '<tr><td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#3b82f6;font-family:JetBrains Mono,monospace;font-size:14px;"><strong>Customer Price</strong></td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#3b82f6;font-family:JetBrains Mono,monospace;font-size:14px;">' + weeklyRevenue + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#3b82f6;font-family:JetBrains Mono,monospace;font-size:14px;">' + monthlyRevenue + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#3b82f6;font-family:JetBrains Mono,monospace;font-size:14px;">' + annualRevenue + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#3b82f6;font-family:JetBrains Mono,monospace;font-size:14px;">' + contractRevenue + '</td></tr>' +
-                '<tr><td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;"><strong>Your Costs</strong></td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + weeklyCost + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + monthlyCost + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + annualCost + '</td>' +
-                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + contractCost + '</td></tr>' +
+                '<tr><td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;"><strong>Customer Price</strong></td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + weeklyRevenue + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + monthlyRevenue + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + annualRevenue + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#f59e0b;font-family:JetBrains Mono,monospace;font-size:14px;">' + contractRevenue + '</td></tr>' +
+                '<tr><td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#ef4444;font-family:JetBrains Mono,monospace;font-size:14px;"><strong>Your Costs</strong></td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#ef4444;font-family:JetBrains Mono,monospace;font-size:14px;">' + weeklyCost + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#ef4444;font-family:JetBrains Mono,monospace;font-size:14px;">' + monthlyCost + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#ef4444;font-family:JetBrains Mono,monospace;font-size:14px;">' + annualCost + '</td>' +
+                '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#ef4444;font-family:JetBrains Mono,monospace;font-size:14px;">' + contractCost + '</td></tr>' +
                 '<tr><td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#10b981;font-family:JetBrains Mono,monospace;font-size:14px;font-weight:600;"><strong>Profit</strong></td>' +
                 '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#10b981;font-family:JetBrains Mono,monospace;font-size:14px;font-weight:600;">' + weeklyProfit + '</td>' +
                 '<td style="padding:12px 15px;border-bottom:1px solid #e2e8f0;color:#10b981;font-family:JetBrains Mono,monospace;font-size:14px;font-weight:600;">' + monthlyProfit + '</td>' +
@@ -2792,9 +4159,31 @@
             // Build CSV content (Excel compatible)
             let csv = '\ufeff'; // BOM for Excel UTF-8
             
+            // Get client info
+            const clientInfo = getClientInfo();
+            
             // Title
             csv += 'SECURITY SERVICES QUOTE\n';
-            csv += 'Generated:,' + new Date().toLocaleDateString() + '\n\n';
+            csv += 'Generated:,' + new Date().toLocaleDateString() + '\n';
+            csv += 'Last Revised:,' + clientInfo.lastRevised + '\n\n';
+            
+            // Client Information
+            if (clientInfo.siteName || clientInfo.contactName || clientInfo.siteAddresses.length > 0) {
+                csv += 'CLIENT INFORMATION\n';
+                if (clientInfo.siteName) csv += 'Site Name,' + clientInfo.siteName + '\n';
+                if (clientInfo.contactName) csv += 'Point of Contact,' + clientInfo.contactName + '\n';
+                if (clientInfo.contactEmail) csv += 'Email,' + clientInfo.contactEmail + '\n';
+                if (clientInfo.contactPhone) csv += 'Phone,' + clientInfo.contactPhone + '\n';
+                
+                clientInfo.siteAddresses.forEach(addr => {
+                    csv += addr.label + ',"' + addr.full + '"\n';
+                });
+                
+                if (clientInfo.billingAddress) {
+                    csv += 'Billing Address,"' + clientInfo.billingAddress + '"\n';
+                }
+                csv += '\n';
+            }
             
             // Contract Details - dynamic based on duration type
             csv += 'CONTRACT DETAILS\n';
@@ -2877,6 +4266,50 @@
             }
             csv += '\n';
             
+            // Tiers Section
+            const tiersEnabled = document.getElementById('enableTiers').checked;
+            csv += 'TIERED PRICING\n';
+            csv += 'Enabled,' + (tiersEnabled ? 'Yes' : 'No') + '\n';
+            if (tiersEnabled) {
+                const tierData = getTierData();
+                tierData.forEach(tier => {
+                    csv += tier.name + ',Months ' + tier.startMonth + '-' + tier.endMonth + '\n';
+                    tier.positions.forEach(pos => {
+                        csv += '  ' + pos.name + ',$' + pos.payRate.toFixed(2) + '/hr pay,$' + pos.billRate.toFixed(2) + '/hr bill\n';
+                    });
+                });
+            }
+            csv += '\n';
+            
+            // Peak Season Section
+            const peakEnabled = document.getElementById('enablePeakSeason').checked;
+            csv += 'PEAK SEASON\n';
+            csv += 'Enabled,' + (peakEnabled ? 'Yes' : 'No') + '\n';
+            if (peakEnabled) {
+                const peakData = getPeakData();
+                if (peakData) {
+                    if (peakData.durationByMonths) {
+                        csv += 'Duration,Months ' + peakData.startMonth + '-' + peakData.endMonth + '\n';
+                    } else {
+                        csv += 'Duration,' + peakData.startDate + ' to ' + peakData.endDate + '\n';
+                    }
+                    csv += 'Apply To,' + (peakData.applyTo === 'base' ? 'Base Rates' : 'Current Tier Rates') + '\n';
+                    csv += '\nPeak Hours Override\n';
+                    csv += 'Position,Normal Hours,Peak Hours\n';
+                    peakData.positions.forEach(pos => {
+                        csv += pos.name + ',' + pos.normalHours + ',' + pos.peakHours + '\n';
+                    });
+                    if (peakData.specialPosition) {
+                        csv += '\nSpecial Peak Position\n';
+                        csv += 'Name,' + peakData.specialPosition.name + '\n';
+                        csv += 'Hours,' + peakData.specialPosition.hours + '\n';
+                        csv += 'Pay Rate,$' + peakData.specialPosition.payRate + '\n';
+                        csv += 'Bill Rate,$' + peakData.specialPosition.billRate + '\n';
+                    }
+                }
+            }
+            csv += '\n';
+            
             // Financial Summary
             csv += 'FINANCIAL SUMMARY\n';
             csv += 'Category,Weekly,Monthly,Annual,Contract Total\n';
@@ -2903,6 +4336,7 @@
         }
 
         // Initial setup
+        initializeClientInfo();
         toggleDurationType();
         toggleDurationType();
         toggleHoursInput();
