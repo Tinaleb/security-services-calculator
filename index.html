@@ -641,6 +641,302 @@
             font-weight: 600;
         }
 
+        /* Tax Budget Tab Styles */
+        .tax-budget-section {
+            padding: 1rem 0;
+        }
+
+        .tax-location-selector {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tax-location-selector .row {
+            margin-bottom: 0;
+        }
+
+        .tax-rates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tax-rate-card {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .tax-rate-card.federal {
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .tax-rate-card.state {
+            border-color: rgba(168, 85, 247, 0.3);
+        }
+
+        .tax-rate-card.local {
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .tax-rate-card.insurance {
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .tax-rate-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .tax-rate-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+        }
+
+        .tax-rate-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tax-rate-badge.federal {
+            background: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+        }
+
+        .tax-rate-badge.state {
+            background: rgba(168, 85, 247, 0.15);
+            color: #a855f7;
+        }
+
+        .tax-rate-badge.local {
+            background: rgba(245, 158, 11, 0.15);
+            color: #f59e0b;
+        }
+
+        .tax-rate-badge.manual {
+            background: rgba(100, 116, 139, 0.15);
+            color: #64748b;
+        }
+
+        .tax-rate-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .tax-rate-detail {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .tax-calc-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .tax-calc-table th,
+        .tax-calc-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .tax-calc-table th {
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        .tax-calc-table .tax-amount {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-amber);
+        }
+
+        .tax-burden-summary {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tax-burden-title {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .tax-burden-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .tax-burden-item {
+            text-align: center;
+        }
+
+        .tax-burden-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .tax-burden-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tax-burden-value.total {
+            color: var(--accent-amber);
+        }
+
+        .tax-burden-value.rate {
+            color: #a855f7;
+        }
+
+        .tax-burden-value.perhour {
+            color: var(--accent-blue);
+        }
+
+        .wc-reference-table {
+            background: var(--bg-input);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .wc-reference-table h4 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .wc-rate-range {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .wc-rate-range:last-child {
+            border-bottom: none;
+        }
+
+        .wc-class-code {
+            color: var(--text-primary);
+        }
+
+        .wc-rate-values {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+        }
+
+        .export-btn.tax-export {
+            background: linear-gradient(135deg, #a855f7, #7c3aed);
+        }
+
+        /* Travel/Lodging Reference Styles */
+        .travel-reference-box {
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .travel-reference-title {
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .travel-reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .travel-reference-item {
+            background: var(--bg-input);
+            border-radius: 6px;
+            padding: 0.75rem;
+        }
+
+        .travel-reference-label {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .travel-reference-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+
+        .travel-reference-note {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .travel-totals-box {
+            background: var(--bg-input);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .travel-totals-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .travel-totals-row:last-child {
+            border-bottom: none;
+            font-weight: 600;
+        }
+
+        .travel-totals-label {
+            color: var(--text-secondary);
+        }
+
+        .travel-totals-value {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+        }
+
         .custom-position-input {
             margin-top: 0.5rem;
         }
@@ -1169,7 +1465,7 @@
                 <div id="daysSection" class="hidden">
                     <div class="form-group">
                         <label>Number of Days</label>
-                        <select id="contractDays" onchange="calculate()">
+                        <select id="contractDays" onchange="validateTierOverlaps(); calculate()">
                             <option value="1">1 Day</option>
                             <option value="2" selected>2 Days</option>
                             <option value="3">3 Days</option>
@@ -1184,7 +1480,7 @@
                 <div id="weeksSection" class="hidden">
                     <div class="form-group">
                         <label>Number of Weeks</label>
-                        <select id="contractWeeks" onchange="calculate()">
+                        <select id="contractWeeks" onchange="validateTierOverlaps(); calculate()">
                             <option value="1">1 Week</option>
                             <option value="2" selected>2 Weeks</option>
                             <option value="3">3 Weeks</option>
@@ -1196,7 +1492,7 @@
                 <div id="monthsSection">
                     <div class="form-group">
                         <label>Contract Length</label>
-                        <select id="contractLength" onchange="calculate()">
+                        <select id="contractLength" onchange="validateTierOverlaps(); calculate()">
                             <option value="1">1 Month</option>
                             <option value="3">3 Months</option>
                             <option value="6">6 Months</option>
@@ -1407,6 +1703,10 @@
                         <!-- Additional tiers will be added here -->
                     </div>
 
+                    <div id="tierOverlapWarning" class="hours-warning hidden">
+                        ⚠️ <span id="tierOverlapMessage">Tier overlap detected</span>
+                    </div>
+
                     <button type="button" class="add-tier-btn" onclick="addTierRow()">
                         + Add Tier
                     </button>
@@ -1565,13 +1865,13 @@
                     <div class="row">
                         <div class="form-group">
                             <label>Installation Labor Hours</label>
-                            <input type="number" id="installHours" value="0" min="0" onchange="calculate()">
+                            <input type="number" id="installHours" value="0" min="0" onchange="updateInstallationSummary(); calculate()">
                         </div>
                         <div class="form-group">
                             <label>Technician Hourly Rate</label>
                             <div class="input-group">
                                 <span class="input-prefix">$</span>
-                                <input type="number" id="techRate" value="45" step="0.01" min="0" onchange="calculate()">
+                                <input type="number" id="techRate" value="45" step="0.01" min="0" onchange="updateInstallationSummary(); calculate()">
                             </div>
                         </div>
                     </div>
@@ -1587,7 +1887,7 @@
                     <div class="form-group">
                         <label>Markup Factor <span class="info-tooltip" title="Applied to equipment and labor">?</span></label>
                         <div class="input-group has-suffix">
-                            <input type="number" id="electronicMarkup" value="1.35" step="0.01" min="1" onchange="calculate()">
+                            <input type="number" id="electronicMarkup" value="1.35" step="0.01" min="1" onchange="updateInstallationSummary(); calculate()">
                             <span class="input-suffix">×</span>
                         </div>
                     </div>
@@ -1595,6 +1895,155 @@
                     <div class="margin-display">
                         <span class="margin-label">Effective Margin</span>
                         <span class="margin-value" id="electronicMargin">25.9%</span>
+                    </div>
+
+                    <!-- Installation Summary -->
+                    <div class="travel-totals-box" id="installationSummary" style="display: none;">
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">📋 Installation Summary</div>
+                        <div class="travel-totals-row">
+                            <span class="travel-totals-label">Total Labor Hours</span>
+                            <span class="travel-totals-value" id="installHoursSummary">0 hrs</span>
+                        </div>
+                        <div class="travel-totals-row">
+                            <span class="travel-totals-label">Estimated Duration</span>
+                            <span class="travel-totals-value" id="installDaysSummary" style="color: var(--text-secondary);">≈ 0 days (at 8 hrs/day)</span>
+                        </div>
+                        <div class="travel-totals-row">
+                            <span class="travel-totals-label">Installation Cost (Your Cost)</span>
+                            <span class="travel-totals-value" id="installCostSummary" style="color: var(--accent-red);">$0.00</span>
+                        </div>
+                        <div class="travel-totals-row">
+                            <span class="travel-totals-label">Customer Price</span>
+                            <span class="travel-totals-value" id="installPriceSummary" style="color: var(--accent-amber);">$0.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Travel/Lodging Section -->
+                    <div class="section-divider"></div>
+                    <label class="checkbox-group">
+                        <input type="checkbox" id="enableTravel" onchange="toggleTravelSection()">
+                        <span class="checkbox-label">Job requires travel/lodging expenses</span>
+                    </label>
+
+                    <div id="travelSection" class="hidden">
+                        <div class="row" style="margin-top: 1rem;">
+                            <div class="form-group">
+                                <label>Number of Technicians Traveling</label>
+                                <input type="number" id="numTechsTraveling" value="1" min="1" onchange="calculateTravelCosts()">
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Days On-Site</label>
+                                <input type="number" id="daysOnSite" value="1" min="1" onchange="calculateTravelCosts()">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Number of Nights Lodging</label>
+                                <input type="number" id="nightsLodging" value="0" min="0" onchange="calculateTravelCosts()">
+                            </div>
+                            <div class="form-group">
+                                <label>Lodging Rate (per night, per tech)</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">$</span>
+                                    <input type="number" id="lodgingRate" value="150" step="0.01" min="0" onchange="calculateTravelCosts()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Per Diem Input Type</label>
+                                <select id="perDiemType" onchange="togglePerDiemInput()">
+                                    <option value="daily">Per Day Amount</option>
+                                    <option value="total">Total Amount</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="perDiemDailyGroup">
+                                <label>Per Diem Rate (per day, per tech)</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">$</span>
+                                    <input type="number" id="perDiemDaily" value="79" step="0.01" min="0" onchange="calculateTravelCosts()">
+                                </div>
+                            </div>
+                            <div class="form-group hidden" id="perDiemTotalGroup">
+                                <label>Total Per Diem (all techs, all days)</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">$</span>
+                                    <input type="number" id="perDiemTotal" value="0" step="0.01" min="0" onchange="calculateTravelCosts()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Travel Costs (airfare, rental car, mileage, etc.)</label>
+                            <div class="input-group">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="travelCostsFlat" value="0" step="0.01" min="0" onchange="calculateTravelCosts()">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Travel Expense Billing</label>
+                            <select id="travelBillingType" onchange="calculateTravelCosts()">
+                                <option value="passthrough">Pass-through at cost (no markup)</option>
+                                <option value="markup">Apply markup (same as equipment)</option>
+                            </select>
+                        </div>
+
+                        <!-- Travel Cost Summary -->
+                        <div class="travel-totals-box">
+                            <div class="travel-totals-row">
+                                <span class="travel-totals-label">Lodging Total</span>
+                                <span class="travel-totals-value" id="lodgingTotal">$0.00</span>
+                            </div>
+                            <div class="travel-totals-row">
+                                <span class="travel-totals-label">Per Diem Total</span>
+                                <span class="travel-totals-value" id="perDiemTotalDisplay">$0.00</span>
+                            </div>
+                            <div class="travel-totals-row">
+                                <span class="travel-totals-label">Travel Costs</span>
+                                <span class="travel-totals-value" id="travelCostsDisplay">$0.00</span>
+                            </div>
+                            <div class="travel-totals-row" style="border-top: 2px solid var(--border); margin-top: 0.5rem; padding-top: 0.75rem;">
+                                <span class="travel-totals-label"><strong>Total Travel/Lodging (Your Cost)</strong></span>
+                                <span class="travel-totals-value" id="travelTotalCost" style="color: var(--accent-red);">$0.00</span>
+                            </div>
+                            <div class="travel-totals-row">
+                                <span class="travel-totals-label"><strong>Customer Price</strong></span>
+                                <span class="travel-totals-value" id="travelCustomerPrice" style="color: var(--accent-amber);">$0.00</span>
+                            </div>
+                        </div>
+
+                        <!-- GSA & IRS Reference -->
+                        <div class="travel-reference-box">
+                            <div class="travel-reference-title">📋 2025 Reference Rates</div>
+                            <div class="travel-reference-grid">
+                                <div class="travel-reference-item">
+                                    <div class="travel-reference-label">GSA Per Diem (CONUS)</div>
+                                    <div class="travel-reference-value">$79/day</div>
+                                    <div class="travel-reference-note">Standard M&IE rate</div>
+                                </div>
+                                <div class="travel-reference-item">
+                                    <div class="travel-reference-label">GSA Lodging (Standard)</div>
+                                    <div class="travel-reference-value">$107/night</div>
+                                    <div class="travel-reference-note">Varies by location</div>
+                                </div>
+                                <div class="travel-reference-item">
+                                    <div class="travel-reference-label">IRS Mileage Rate</div>
+                                    <div class="travel-reference-value">$0.70/mile</div>
+                                    <div class="travel-reference-note">Business standard rate</div>
+                                </div>
+                                <div class="travel-reference-item">
+                                    <div class="travel-reference-label">High-Cost Areas</div>
+                                    <div class="travel-reference-value">$79-$92/day</div>
+                                    <div class="travel-reference-note">NYC, SF, DC, etc.</div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.75rem; margin-bottom: 0;">
+                                💡 Visit <a href="https://www.gsa.gov/travel/plan-book/per-diem-rates" target="_blank" style="color: var(--accent-blue);">gsa.gov/travel/plan-book/per-diem-rates</a> for location-specific rates
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1884,6 +2333,7 @@
                 <div class="tabs">
                     <button class="tab active" onclick="switchTab('summary')">Summary</button>
                     <button class="tab" onclick="switchTab('breakdown')">Detailed Breakdown</button>
+                    <button class="tab" onclick="switchTab('taxbudget')">Tax Budget</button>
                 </div>
 
                 <div id="summaryTab">
@@ -2014,6 +2464,262 @@
                         <tbody id="breakdownBody">
                         </tbody>
                     </table>
+                </div>
+
+                <!-- Tax Budget Tab -->
+                <div id="taxBudgetTab" class="hidden">
+                    <div class="tax-budget-section">
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">
+                            Calculate employer tax obligations based on location and wages from your quote.
+                        </p>
+
+                        <!-- Location Selector -->
+                        <div class="tax-location-selector">
+                            <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">📍 Business Location</h4>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <select id="taxState" onchange="updateTaxRates()">
+                                        <option value="">Select State...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>County/City</label>
+                                    <select id="taxLocality" onchange="updateTaxRates()">
+                                        <option value="">Select locality...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Federal Taxes -->
+                        <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Federal Employer Taxes</h4>
+                        <div class="tax-rates-grid">
+                            <div class="tax-rate-card federal">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">Social Security (FICA)</span>
+                                    <span class="tax-rate-badge federal">Federal</span>
+                                </div>
+                                <div class="tax-rate-value">6.20%</div>
+                                <div class="tax-rate-detail">On wages up to $168,600 (2024)</div>
+                            </div>
+                            <div class="tax-rate-card federal">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">Medicare (FICA)</span>
+                                    <span class="tax-rate-badge federal">Federal</span>
+                                </div>
+                                <div class="tax-rate-value">1.45%</div>
+                                <div class="tax-rate-detail">No wage limit</div>
+                            </div>
+                            <div class="tax-rate-card federal">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">FUTA</span>
+                                    <span class="tax-rate-badge federal">Federal</span>
+                                </div>
+                                <div class="tax-rate-value">0.60%</div>
+                                <div class="tax-rate-detail">On first $7,000/employee (after state credit)</div>
+                            </div>
+                        </div>
+
+                        <!-- State Taxes -->
+                        <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">State Employer Taxes</h4>
+                        <div class="tax-rates-grid">
+                            <div class="tax-rate-card state">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">SUI (State Unemployment)</span>
+                                    <span class="tax-rate-badge state">State</span>
+                                </div>
+                                <div class="tax-rate-value" id="suiRateDisplay">--%</div>
+                                <div class="tax-rate-detail" id="suiWageBase">Select state to view rate</div>
+                            </div>
+                            <div class="tax-rate-card state" id="sdiCard" style="display: none;">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">SDI (State Disability)</span>
+                                    <span class="tax-rate-badge state">State</span>
+                                </div>
+                                <div class="tax-rate-value" id="sdiRateDisplay">--%</div>
+                                <div class="tax-rate-detail" id="sdiDetail">Employer portion</div>
+                            </div>
+                        </div>
+
+                        <!-- Local Taxes -->
+                        <div id="localTaxSection" style="display: none;">
+                            <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Local Employer Taxes</h4>
+                            <div class="tax-rates-grid" id="localTaxCards">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Other Local Tax Manual Entry -->
+                        <div class="tax-rate-card local" style="margin-bottom: 1.5rem;">
+                            <div class="tax-rate-header">
+                                <span class="tax-rate-name">Other Local Tax (Manual Entry)</span>
+                                <span class="tax-rate-badge manual">Optional</span>
+                            </div>
+                            <div class="row" style="margin-top: 0.5rem;">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label style="font-size: 0.75rem;">Tax Name</label>
+                                    <input type="text" id="otherLocalTaxName" placeholder="e.g., City Tax" onchange="calculateTaxBudget()">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label style="font-size: 0.75rem;">Rate (%)</label>
+                                    <input type="number" id="otherLocalTaxRate" value="0" step="0.01" min="0" onchange="calculateTaxBudget()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Workers' Comp & GL -->
+                        <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Insurance (Manual Entry)</h4>
+                        <div class="tax-rates-grid">
+                            <div class="tax-rate-card insurance">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">Workers' Compensation</span>
+                                    <span class="tax-rate-badge manual">Manual</span>
+                                </div>
+                                <div class="form-group" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                                    <label style="font-size: 0.75rem;">Classification</label>
+                                    <select id="wcClassCode" onchange="updateWcRateReference()">
+                                        <option value="7720">7720 - Security Guard (Unarmed)</option>
+                                        <option value="7721">7721 - Security Guard (Armed)</option>
+                                        <option value="8810">8810 - Clerical Office</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label style="font-size: 0.75rem;">Your Rate (per $100 payroll)</label>
+                                    <div class="input-group">
+                                        <span class="input-prefix">$</span>
+                                        <input type="number" id="wcRate" value="0" step="0.01" min="0" onchange="calculateTaxBudget()">
+                                    </div>
+                                </div>
+                                <div class="wc-reference-table" id="wcReferenceTable">
+                                    <h4>Rate Reference for Selected State</h4>
+                                    <div id="wcRateRanges">
+                                        <p style="color: var(--text-secondary); font-size: 0.8rem;">Select a state to see rate ranges</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tax-rate-card insurance">
+                                <div class="tax-rate-header">
+                                    <span class="tax-rate-name">General Liability</span>
+                                    <span class="tax-rate-badge manual">Manual</span>
+                                </div>
+                                <div class="form-group" style="margin-top: 0.5rem; margin-bottom: 0;">
+                                    <label style="font-size: 0.75rem;">Rate (per $100 payroll)</label>
+                                    <div class="input-group">
+                                        <span class="input-prefix">$</span>
+                                        <input type="number" id="glRate" value="0" step="0.01" min="0" onchange="calculateTaxBudget()">
+                                    </div>
+                                </div>
+                                <div class="tax-rate-detail" style="margin-top: 0.5rem;">Varies by coverage, revenue, and claims history</div>
+                            </div>
+                        </div>
+
+                        <!-- Tax Calculation Table -->
+                        <h4 style="color: var(--text-secondary); font-size: 0.85rem; margin: 1.5rem 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">Tax Calculation Breakdown</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 1rem;" id="taxWageSource">
+                            Based on wages from Physical Personnel section
+                        </p>
+                        <table class="tax-calc-table">
+                            <thead>
+                                <tr>
+                                    <th>Tax/Insurance</th>
+                                    <th>Rate</th>
+                                    <th>Taxable Wages</th>
+                                    <th>Annual Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody id="taxCalcBody">
+                                <tr>
+                                    <td>Social Security (FICA)</td>
+                                    <td>6.20%</td>
+                                    <td class="tax-amount" id="ssWages">$0.00</td>
+                                    <td class="tax-amount" id="ssCost">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Medicare (FICA)</td>
+                                    <td>1.45%</td>
+                                    <td class="tax-amount" id="medWages">$0.00</td>
+                                    <td class="tax-amount" id="medCost">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>FUTA</td>
+                                    <td>0.60%</td>
+                                    <td class="tax-amount" id="futaWages">$0.00</td>
+                                    <td class="tax-amount" id="futaCost">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>SUI (State Unemployment)</td>
+                                    <td id="suiRateCell">--%</td>
+                                    <td class="tax-amount" id="suiWages">$0.00</td>
+                                    <td class="tax-amount" id="suiCost">$0.00</td>
+                                </tr>
+                                <tr id="sdiRow" style="display: none;">
+                                    <td>SDI (State Disability)</td>
+                                    <td id="sdiRateCell">--%</td>
+                                    <td class="tax-amount" id="sdiWages">$0.00</td>
+                                    <td class="tax-amount" id="sdiCost">$0.00</td>
+                                </tr>
+                                <tr id="localTaxRow" style="display: none;">
+                                    <td id="localTaxName">Local Tax</td>
+                                    <td id="localTaxRateCell">--%</td>
+                                    <td class="tax-amount" id="localTaxWages">$0.00</td>
+                                    <td class="tax-amount" id="localTaxCost">$0.00</td>
+                                </tr>
+                                <tr id="otherLocalRow" style="display: none;">
+                                    <td id="otherLocalName">Other Local Tax</td>
+                                    <td id="otherLocalRateCell">--%</td>
+                                    <td class="tax-amount" id="otherLocalWages">$0.00</td>
+                                    <td class="tax-amount" id="otherLocalCost">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Workers' Compensation</td>
+                                    <td id="wcRateCell">$0.00</td>
+                                    <td class="tax-amount" id="wcWages">$0.00</td>
+                                    <td class="tax-amount" id="wcCost">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>General Liability</td>
+                                    <td id="glRateCell">$0.00</td>
+                                    <td class="tax-amount" id="glWages">$0.00</td>
+                                    <td class="tax-amount" id="glCost">$0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Tax Burden Summary -->
+                        <div class="tax-burden-summary">
+                            <div class="tax-burden-title">Effective Employer Tax Burden</div>
+                            <div class="tax-burden-grid">
+                                <div class="tax-burden-item">
+                                    <div class="tax-burden-label">Annual Gross Wages</div>
+                                    <div class="tax-burden-value" id="taxAnnualWages" style="color: var(--text-primary);">$0.00</div>
+                                </div>
+                                <div class="tax-burden-item">
+                                    <div class="tax-burden-label">Total Tax Burden</div>
+                                    <div class="tax-burden-value total" id="taxTotalBurden">$0.00</div>
+                                </div>
+                                <div class="tax-burden-item">
+                                    <div class="tax-burden-label">Effective Rate</div>
+                                    <div class="tax-burden-value rate" id="taxEffectiveRate">0.00%</div>
+                                </div>
+                                <div class="tax-burden-item">
+                                    <div class="tax-burden-label">Cost Per Hour</div>
+                                    <div class="tax-burden-value perhour" id="taxPerHour">$0.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: rgba(100, 116, 139, 0.1); border-radius: 8px;">
+                            <p style="color: var(--text-secondary); font-size: 0.75rem; margin: 0;">
+                                <strong>Note:</strong> Tax rates shown are based on 2024 data for new employers. Actual rates may vary based on experience rating, industry classification, and local regulations. Consult with a tax professional for precise calculations.
+                            </p>
+                        </div>
+
+                        <div class="row" style="margin-top: 1.5rem;">
+                            <button class="export-btn tax-export" onclick="exportTaxBudget()">📊 Export Tax Budget</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row" style="margin-top: 1.5rem;">
@@ -2590,21 +3296,21 @@
                 <div class="tier-duration" id="tier${tierNumber}-monthsInputs">
                     <div class="form-group">
                         <label>Start Month</label>
-                        <input type="number" id="tier${tierNumber}-startMonth" value="${(tierNumber - 1) * 6 + 1}" min="1" onchange="calculate()">
+                        <input type="number" id="tier${tierNumber}-startMonth" value="${(tierNumber - 1) * 6 + 1}" min="1" onchange="validateTierOverlaps(); calculate()">
                     </div>
                     <div class="form-group">
                         <label>End Month</label>
-                        <input type="number" id="tier${tierNumber}-endMonth" value="${tierNumber * 6}" min="1" onchange="calculate()">
+                        <input type="number" id="tier${tierNumber}-endMonth" value="${tierNumber * 6}" min="1" onchange="validateTierOverlaps(); calculate()">
                     </div>
                 </div>
                 <div class="tier-duration hidden" id="tier${tierNumber}-datesInputs">
                     <div class="form-group">
                         <label>Start Date</label>
-                        <input type="date" id="tier${tierNumber}-startDate" onchange="calculate()">
+                        <input type="date" id="tier${tierNumber}-startDate" onchange="validateTierOverlaps(); calculate()">
                     </div>
                     <div class="form-group">
                         <label>End Date</label>
-                        <input type="date" id="tier${tierNumber}-endDate" onchange="calculate()">
+                        <input type="date" id="tier${tierNumber}-endDate" onchange="validateTierOverlaps(); calculate()">
                     </div>
                 </div>
                 ${positionAdjustmentsHtml}
@@ -2618,6 +3324,7 @@
             });
             
             renumberTiers();
+            validateTierOverlaps();
             calculate();
         }
 
@@ -2626,6 +3333,7 @@
             if (tierDiv) {
                 tierDiv.remove();
                 renumberTiers();
+                validateTierOverlaps();
                 calculate();
             }
         }
@@ -2639,6 +3347,132 @@
                     labelSpan.textContent = `Tier ${index + 2}`;
                 }
             });
+        }
+
+        function validateTierOverlaps() {
+            const warningEl = document.getElementById('tierOverlapWarning');
+            const messageEl = document.getElementById('tierOverlapMessage');
+            const tierRows = document.getElementById('tierRows');
+            const tiers = tierRows.querySelectorAll('.tier-row:not(.base-tier)');
+            
+            // If no additional tiers, hide warning
+            if (tiers.length === 0) {
+                warningEl.classList.add('hidden');
+                return;
+            }
+            
+            // Get contract duration for comparison
+            const durationType = document.getElementById('durationType').value;
+            let contractMonths = 12; // Default
+            if (durationType === 'months') {
+                contractMonths = parseInt(document.getElementById('contractLength').value) || 12;
+            } else if (durationType === 'weeks') {
+                const weeks = parseInt(document.getElementById('contractWeeks').value) || 4;
+                contractMonths = Math.ceil(weeks / 4.345);
+            } else if (durationType === 'days') {
+                const days = parseInt(document.getElementById('contractDays').value) || 30;
+                contractMonths = Math.ceil(days / 30);
+            } else if (durationType === 'daterange') {
+                const startDate = document.getElementById('startDate').value;
+                const endDate = document.getElementById('endDate').value;
+                if (startDate && endDate) {
+                    const start = new Date(startDate);
+                    const end = new Date(endDate);
+                    const diffDays = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+                    contractMonths = Math.ceil(diffDays / 30);
+                }
+            }
+            
+            const issues = [];
+            
+            // Collect tier data
+            const tierDataList = [];
+            tiers.forEach((tier, index) => {
+                const tierId = tier.id.split('-')[1];
+                const isMonthBased = document.getElementById(`tier${tierId}-durationMonths`)?.classList.contains('active');
+                
+                let startVal, endVal;
+                if (isMonthBased) {
+                    startVal = parseInt(document.getElementById(`tier${tierId}-startMonth`)?.value) || 0;
+                    endVal = parseInt(document.getElementById(`tier${tierId}-endMonth`)?.value) || 0;
+                } else {
+                    const startDate = document.getElementById(`tier${tierId}-startDate`)?.value;
+                    const endDate = document.getElementById(`tier${tierId}-endDate`)?.value;
+                    if (startDate && endDate) {
+                        // Convert dates to month numbers for comparison (relative to contract start)
+                        const contractStartDate = document.getElementById('startDate')?.value;
+                        if (contractStartDate) {
+                            const contractStart = new Date(contractStartDate);
+                            const tierStart = new Date(startDate);
+                            const tierEnd = new Date(endDate);
+                            startVal = Math.ceil((tierStart - contractStart) / (1000 * 60 * 60 * 24 * 30)) + 1;
+                            endVal = Math.ceil((tierEnd - contractStart) / (1000 * 60 * 60 * 24 * 30)) + 1;
+                        } else {
+                            startVal = 0;
+                            endVal = 0;
+                        }
+                    } else {
+                        startVal = 0;
+                        endVal = 0;
+                    }
+                }
+                
+                tierDataList.push({
+                    tierNum: index + 2,
+                    start: startVal,
+                    end: endVal,
+                    isMonthBased: isMonthBased
+                });
+            });
+            
+            // Check for issues
+            tierDataList.forEach((tier, index) => {
+                // Check if start is after end within the same tier
+                if (tier.start > tier.end && tier.end > 0) {
+                    issues.push(`Tier ${tier.tierNum}: Start (${tier.start}) is after end (${tier.end})`);
+                }
+                
+                // Check overlap with previous tier
+                if (index > 0) {
+                    const prevTier = tierDataList[index - 1];
+                    if (tier.start <= prevTier.end && tier.start > 0 && prevTier.end > 0) {
+                        issues.push(`Tier ${tier.tierNum} overlaps with Tier ${prevTier.tierNum} (months ${tier.start}-${prevTier.end})`);
+                    }
+                    // Check for gap
+                    if (tier.start > prevTier.end + 1 && tier.start > 0 && prevTier.end > 0) {
+                        const gapStart = prevTier.end + 1;
+                        const gapEnd = tier.start - 1;
+                        if (gapStart === gapEnd) {
+                            issues.push(`Gap detected: Month ${gapStart} is not covered between Tier ${prevTier.tierNum} and Tier ${tier.tierNum}`);
+                        } else {
+                            issues.push(`Gap detected: Months ${gapStart}-${gapEnd} are not covered between Tier ${prevTier.tierNum} and Tier ${tier.tierNum}`);
+                        }
+                    }
+                } else {
+                    // First additional tier - check against base tier (Tier 1)
+                    // Base tier ends when Tier 2 starts, so check if Tier 2 starts at 1 (overlap) or leaves gap
+                    if (tier.start > 1 && tier.start > 0) {
+                        // There might be a gap - but base tier fills until Tier 2 starts, so this is actually OK
+                        // Only warn if Tier 2 starts before month 1
+                    }
+                    if (tier.start < 1 && tier.start !== 0) {
+                        issues.push(`Tier ${tier.tierNum} starts before the contract begins`);
+                    }
+                }
+                
+                // Check if tier extends beyond contract duration
+                if (tier.end > contractMonths && tier.end > 0) {
+                    issues.push(`Tier ${tier.tierNum} extends beyond contract duration (ends month ${tier.end}, contract is ${contractMonths} months)`);
+                }
+            });
+            
+            // Display warning if issues found
+            if (issues.length > 0) {
+                messageEl.innerHTML = issues.join('<br>');
+                warningEl.classList.remove('hidden');
+            } else {
+                warningEl.classList.add('hidden');
+            }
         }
 
         function toggleTierDurationType(tierNumber, type) {
@@ -2658,6 +3492,7 @@
                 monthsInputs.classList.add('hidden');
                 datesInputs.classList.remove('hidden');
             }
+            validateTierOverlaps();
             calculate();
         }
 
@@ -2994,6 +3829,151 @@
             previewEl.innerHTML = html || '<p style="color: var(--text-secondary);">Configure tiers or peak season to see preview.</p>';
         }
 
+        // Travel/Lodging Functions
+        function updateInstallationSummary() {
+            const installHours = parseFloat(document.getElementById('installHours').value) || 0;
+            const techRate = parseFloat(document.getElementById('techRate').value) || 0;
+            const markup = parseFloat(document.getElementById('electronicMarkup').value) || 1;
+            
+            const summaryDiv = document.getElementById('installationSummary');
+            
+            if (installHours > 0) {
+                summaryDiv.style.display = 'block';
+                
+                const estimatedDays = installHours / 8;
+                const installCost = installHours * techRate;
+                const customerPrice = installCost * markup;
+                
+                document.getElementById('installHoursSummary').textContent = installHours + ' hrs';
+                
+                // Format days nicely
+                let daysText;
+                if (estimatedDays < 1) {
+                    daysText = '< 1 day (at 8 hrs/day)';
+                } else if (estimatedDays === Math.floor(estimatedDays)) {
+                    daysText = estimatedDays + ' day' + (estimatedDays !== 1 ? 's' : '') + ' (at 8 hrs/day)';
+                } else {
+                    daysText = '≈ ' + estimatedDays.toFixed(1) + ' days (at 8 hrs/day)';
+                }
+                document.getElementById('installDaysSummary').textContent = daysText;
+                
+                document.getElementById('installCostSummary').textContent = formatCurrency(installCost);
+                document.getElementById('installPriceSummary').textContent = formatCurrency(customerPrice);
+            } else {
+                summaryDiv.style.display = 'none';
+            }
+        }
+
+        function toggleTravelSection() {
+            const enabled = document.getElementById('enableTravel').checked;
+            const section = document.getElementById('travelSection');
+            
+            if (enabled) {
+                section.classList.remove('hidden');
+                calculateTravelCosts();
+            } else {
+                section.classList.add('hidden');
+            }
+            calculate();
+        }
+
+        function togglePerDiemInput() {
+            const type = document.getElementById('perDiemType').value;
+            const dailyGroup = document.getElementById('perDiemDailyGroup');
+            const totalGroup = document.getElementById('perDiemTotalGroup');
+            
+            if (type === 'daily') {
+                dailyGroup.classList.remove('hidden');
+                totalGroup.classList.add('hidden');
+            } else {
+                dailyGroup.classList.add('hidden');
+                totalGroup.classList.remove('hidden');
+            }
+            calculateTravelCosts();
+        }
+
+        function calculateTravelCosts() {
+            const numTechs = parseInt(document.getElementById('numTechsTraveling').value) || 0;
+            const daysOnSite = parseInt(document.getElementById('daysOnSite').value) || 0;
+            const nightsLodging = parseInt(document.getElementById('nightsLodging').value) || 0;
+            const lodgingRate = parseFloat(document.getElementById('lodgingRate').value) || 0;
+            const travelCostsFlat = parseFloat(document.getElementById('travelCostsFlat').value) || 0;
+            const billingType = document.getElementById('travelBillingType').value;
+            const markup = parseFloat(document.getElementById('electronicMarkup').value) || 1;
+            
+            // Calculate lodging total
+            const lodgingTotal = nightsLodging * lodgingRate * numTechs;
+            
+            // Calculate per diem total
+            let perDiemTotal = 0;
+            const perDiemType = document.getElementById('perDiemType').value;
+            if (perDiemType === 'daily') {
+                const perDiemDaily = parseFloat(document.getElementById('perDiemDaily').value) || 0;
+                perDiemTotal = perDiemDaily * daysOnSite * numTechs;
+            } else {
+                perDiemTotal = parseFloat(document.getElementById('perDiemTotal').value) || 0;
+            }
+            
+            // Calculate total travel cost
+            const totalTravelCost = lodgingTotal + perDiemTotal + travelCostsFlat;
+            
+            // Calculate customer price
+            let customerPrice = totalTravelCost;
+            if (billingType === 'markup') {
+                customerPrice = totalTravelCost * markup;
+            }
+            
+            // Update display
+            document.getElementById('lodgingTotal').textContent = formatCurrency(lodgingTotal);
+            document.getElementById('perDiemTotalDisplay').textContent = formatCurrency(perDiemTotal);
+            document.getElementById('travelCostsDisplay').textContent = formatCurrency(travelCostsFlat);
+            document.getElementById('travelTotalCost').textContent = formatCurrency(totalTravelCost);
+            document.getElementById('travelCustomerPrice').textContent = formatCurrency(customerPrice);
+            
+            calculate();
+        }
+
+        function getTravelData() {
+            if (!document.getElementById('enableTravel')?.checked) {
+                return null;
+            }
+            
+            const numTechs = parseInt(document.getElementById('numTechsTraveling').value) || 0;
+            const daysOnSite = parseInt(document.getElementById('daysOnSite').value) || 0;
+            const nightsLodging = parseInt(document.getElementById('nightsLodging').value) || 0;
+            const lodgingRate = parseFloat(document.getElementById('lodgingRate').value) || 0;
+            const travelCostsFlat = parseFloat(document.getElementById('travelCostsFlat').value) || 0;
+            const billingType = document.getElementById('travelBillingType').value;
+            const markup = parseFloat(document.getElementById('electronicMarkup').value) || 1;
+            
+            const lodgingTotal = nightsLodging * lodgingRate * numTechs;
+            
+            let perDiemTotal = 0;
+            const perDiemType = document.getElementById('perDiemType').value;
+            if (perDiemType === 'daily') {
+                const perDiemDaily = parseFloat(document.getElementById('perDiemDaily').value) || 0;
+                perDiemTotal = perDiemDaily * daysOnSite * numTechs;
+            } else {
+                perDiemTotal = parseFloat(document.getElementById('perDiemTotal').value) || 0;
+            }
+            
+            const totalCost = lodgingTotal + perDiemTotal + travelCostsFlat;
+            const customerPrice = billingType === 'markup' ? totalCost * markup : totalCost;
+            
+            return {
+                numTechs: numTechs,
+                daysOnSite: daysOnSite,
+                nightsLodging: nightsLodging,
+                lodgingRate: lodgingRate,
+                lodgingTotal: lodgingTotal,
+                perDiemTotal: perDiemTotal,
+                travelCosts: travelCostsFlat,
+                totalCost: totalCost,
+                customerPrice: customerPrice,
+                billingType: billingType
+            };
+        }
+
         function updateVisitCountOptions() {
             const frequency = document.getElementById('visitFrequency').value;
             const visitCountSelect = document.getElementById('visitCount');
@@ -3105,6 +4085,7 @@
                 calculateDateRange();
             }
             
+            validateTierOverlaps();
             updateSummaryDisplay();
             calculate();
         }
@@ -3125,6 +4106,7 @@
                     document.getElementById('calculatedDays').textContent = 'Invalid range';
                 }
             }
+            validateTierOverlaps();
             calculate();
         }
 
@@ -3225,17 +4207,24 @@
         function switchTab(tab) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tabs .tab').forEach(t => {
-                if (t.textContent.toLowerCase().includes(tab)) {
+                if ((tab === 'summary' && t.textContent === 'Summary') ||
+                    (tab === 'breakdown' && t.textContent === 'Detailed Breakdown') ||
+                    (tab === 'taxbudget' && t.textContent === 'Tax Budget')) {
                     t.classList.add('active');
                 }
             });
 
+            document.getElementById('summaryTab').classList.add('hidden');
+            document.getElementById('breakdownTab').classList.add('hidden');
+            document.getElementById('taxBudgetTab').classList.add('hidden');
+
             if (tab === 'summary') {
                 document.getElementById('summaryTab').classList.remove('hidden');
-                document.getElementById('breakdownTab').classList.add('hidden');
-            } else {
-                document.getElementById('summaryTab').classList.add('hidden');
+            } else if (tab === 'breakdown') {
                 document.getElementById('breakdownTab').classList.remove('hidden');
+            } else if (tab === 'taxbudget') {
+                document.getElementById('taxBudgetTab').classList.remove('hidden');
+                calculateTaxBudget();
             }
         }
 
@@ -3271,6 +4260,8 @@
             let oneTimeEquipmentRevenue = 0;
             let oneTimeInstallCost = 0;
             let oneTimeInstallRevenue = 0;
+            let oneTimeTravelCost = 0;
+            let oneTimeTravelRevenue = 0;
             let monthlyServiceCost = 0;
             let monthlyServiceRevenue = 0;
             
@@ -3387,6 +4378,24 @@
                         frequency: 'Monthly',
                         type: 'electronic'
                     });
+                }
+
+                // Travel/Lodging costs (if enabled)
+                if (document.getElementById('enableTravel')?.checked) {
+                    const travelData = getTravelData();
+                    if (travelData && travelData.totalCost > 0) {
+                        oneTimeTravelCost = travelData.totalCost;
+                        oneTimeTravelRevenue = travelData.customerPrice;
+                        
+                        breakdownItems.push({
+                            item: 'Travel/Lodging',
+                            cost: oneTimeTravelCost,
+                            revenue: oneTimeTravelRevenue,
+                            profit: oneTimeTravelRevenue - oneTimeTravelCost,
+                            frequency: 'One-Time',
+                            type: 'electronic'
+                        });
+                    }
                 }
             }
 
@@ -3599,8 +4608,8 @@
                 const annualRecurringRevenue = monthlyRecurringRevenue * 12;
                 const annualRecurringCost = monthlyRecurringCost * 12;
                 
-                const oneTimeTotalRevenue = oneTimeEquipmentRevenue + oneTimeInstallRevenue;
-                const oneTimeTotalCost = oneTimeEquipmentCost + oneTimeInstallCost;
+                const oneTimeTotalRevenue = oneTimeEquipmentRevenue + oneTimeInstallRevenue + oneTimeTravelRevenue;
+                const oneTimeTotalCost = oneTimeEquipmentCost + oneTimeInstallCost + oneTimeTravelCost;
 
                 // Contract totals (recurring × contract months + one-time)
                 let contractTotalRevenue = (monthlyRecurringRevenue * contractMonths) + oneTimeTotalRevenue;
@@ -3785,6 +4794,7 @@
             const additionalTiers = tierRows.querySelectorAll('.tier-row:not(.base-tier)');
             additionalTiers.forEach(tier => tier.remove());
             tierCounter = 1;
+            document.getElementById('tierOverlapWarning').classList.add('hidden');
             // Reset peak season
             document.getElementById('peakDurationMonths').classList.add('active');
             document.getElementById('peakDurationDates').classList.remove('active');
@@ -3808,6 +4818,27 @@
             document.getElementById('techRate').value = 0;
             document.getElementById('monthlyServiceCost').value = 0;
             document.getElementById('electronicMarkup').value = 1;
+            document.getElementById('installationSummary').style.display = 'none';
+            
+            // Travel/Lodging reset
+            document.getElementById('enableTravel').checked = false;
+            document.getElementById('travelSection').classList.add('hidden');
+            document.getElementById('numTechsTraveling').value = 1;
+            document.getElementById('daysOnSite').value = 1;
+            document.getElementById('nightsLodging').value = 0;
+            document.getElementById('lodgingRate').value = 150;
+            document.getElementById('perDiemType').value = 'daily';
+            document.getElementById('perDiemDaily').value = 79;
+            document.getElementById('perDiemTotal').value = 0;
+            document.getElementById('perDiemDailyGroup').classList.remove('hidden');
+            document.getElementById('perDiemTotalGroup').classList.add('hidden');
+            document.getElementById('travelCostsFlat').value = 0;
+            document.getElementById('travelBillingType').value = 'passthrough';
+            document.getElementById('lodgingTotal').textContent = '$0.00';
+            document.getElementById('perDiemTotalDisplay').textContent = '$0.00';
+            document.getElementById('travelCostsDisplay').textContent = '$0.00';
+            document.getElementById('travelTotalCost').textContent = '$0.00';
+            document.getElementById('travelCustomerPrice').textContent = '$0.00';
             
             // Vehicle Patrol reset
             document.getElementById('laborCostPerVisit').value = 0;
@@ -3855,6 +4886,20 @@
             document.getElementById('enableVehicle').checked = false;
             document.getElementById('enableCommission').checked = false;
             
+            // Tax Budget reset
+            document.getElementById('taxState').value = '';
+            document.getElementById('taxLocality').innerHTML = '<option value="">No local taxes</option>';
+            document.getElementById('otherLocalTaxName').value = '';
+            document.getElementById('otherLocalTaxRate').value = '0';
+            document.getElementById('wcClassCode').value = '7720';
+            document.getElementById('wcRate').value = '0';
+            document.getElementById('glRate').value = '0';
+            document.getElementById('suiRateDisplay').textContent = '--%';
+            document.getElementById('suiWageBase').textContent = 'Select state to view rate';
+            document.getElementById('sdiCard').style.display = 'none';
+            document.getElementById('localTaxSection').style.display = 'none';
+            updateWcRateReference();
+            
             toggleSection('personnel');
             toggleSection('electronic');
             toggleSection('vehicle');
@@ -3864,6 +4909,7 @@
             document.getElementById('calculatedHours').textContent = '0 hrs/week • 0 hrs/day';
             
             calculate();
+            calculateTaxBudget();
         }
 
         function printSummary() {
@@ -3970,6 +5016,14 @@
                 const equip = document.getElementById('equipmentCost').value;
                 const service = document.getElementById('monthlyServiceCost').value;
                 servicesIncluded.push('Electronic Solutions: $' + equip + ' equipment, $' + service + '/mo service');
+                
+                // Add travel/lodging if enabled
+                if (document.getElementById('enableTravel')?.checked) {
+                    const travelData = getTravelData();
+                    if (travelData) {
+                        servicesIncluded.push('  - Travel/Lodging: ' + travelData.numTechs + ' tech(s), ' + travelData.daysOnSite + ' day(s), ' + formatCurrency(travelData.totalCost) + ' total');
+                    }
+                }
             }
             if (document.getElementById('enableVehicle').checked) {
                 const laborCost = document.getElementById('laborCostPerVisit').value;
@@ -4234,6 +5288,24 @@
                 csv += 'Technician Rate,$' + data.techRate + '\n';
                 csv += 'Monthly Service Cost,$' + data.monthlyServiceCost + '\n';
                 csv += 'Markup Factor,' + data.electronicMarkup + '\n';
+                
+                // Travel/Lodging
+                const travelEnabled = document.getElementById('enableTravel')?.checked;
+                csv += '\nTravel/Lodging Enabled,' + (travelEnabled ? 'Yes' : 'No') + '\n';
+                if (travelEnabled) {
+                    const travelData = getTravelData();
+                    if (travelData) {
+                        csv += 'Number of Technicians,' + travelData.numTechs + '\n';
+                        csv += 'Days On-Site,' + travelData.daysOnSite + '\n';
+                        csv += 'Nights Lodging,' + travelData.nightsLodging + '\n';
+                        csv += 'Lodging Total,' + formatCurrency(travelData.lodgingTotal) + '\n';
+                        csv += 'Per Diem Total,' + formatCurrency(travelData.perDiemTotal) + '\n';
+                        csv += 'Travel Costs,' + formatCurrency(travelData.travelCosts) + '\n';
+                        csv += 'Total Travel Cost,' + formatCurrency(travelData.totalCost) + '\n';
+                        csv += 'Customer Price,' + formatCurrency(travelData.customerPrice) + '\n';
+                        csv += 'Billing Type,' + travelData.billingType + '\n';
+                    }
+                }
             }
             csv += '\n';
             
@@ -4335,8 +5407,407 @@
             }
         }
 
+        // Tax Budget Functions and State Tax Database
+        const stateTaxData = {
+            'AL': { name: 'Alabama', sui: 2.70, wageBase: 8000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.00, 7.00] } },
+            'AK': { name: 'Alaska', sui: 2.01, wageBase: 47100, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.00, 8.50] } },
+            'AZ': { name: 'Arizona', sui: 2.00, wageBase: 8000, sdi: false, wcRanges: { '7720': [1.80, 3.50], '7721': [3.50, 6.00] } },
+            'AR': { name: 'Arkansas', sui: 3.20, wageBase: 7000, sdi: false, wcRanges: { '7720': [2.20, 4.00], '7721': [4.00, 6.50] } },
+            'CA': { name: 'California', sui: 3.40, wageBase: 7000, sdi: true, sdiRate: 0.90, sdiWageBase: 153164, wcRanges: { '7720': [3.50, 6.50], '7721': [6.00, 10.00] }, locals: [
+                { name: 'San Francisco', type: 'Payroll Tax', rate: 0.38 }
+            ]},
+            'CO': { name: 'Colorado', sui: 1.70, wageBase: 20400, sdi: false, wcRanges: { '7720': [2.00, 4.00], '7721': [4.00, 7.00] } },
+            'CT': { name: 'Connecticut', sui: 3.00, wageBase: 15000, sdi: false, wcRanges: { '7720': [3.50, 6.00], '7721': [6.00, 9.50] } },
+            'DE': { name: 'Delaware', sui: 1.80, wageBase: 10500, sdi: false, wcRanges: { '7720': [3.00, 5.00], '7721': [5.00, 8.00] } },
+            'FL': { name: 'Florida', sui: 2.70, wageBase: 7000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'GA': { name: 'Georgia', sui: 2.70, wageBase: 9500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'HI': { name: 'Hawaii', sui: 4.00, wageBase: 56700, sdi: true, sdiRate: 0.50, sdiWageBase: 67656, wcRanges: { '7720': [4.00, 7.00], '7721': [7.00, 11.00] } },
+            'ID': { name: 'Idaho', sui: 1.23, wageBase: 49900, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'IL': { name: 'Illinois', sui: 3.95, wageBase: 13590, sdi: false, wcRanges: { '7720': [3.50, 6.00], '7721': [6.00, 9.50] } },
+            'IN': { name: 'Indiana', sui: 2.50, wageBase: 9500, sdi: false, wcRanges: { '7720': [1.80, 3.50], '7721': [3.50, 6.00] } },
+            'IA': { name: 'Iowa', sui: 1.00, wageBase: 36100, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 5.50] } },
+            'KS': { name: 'Kansas', sui: 2.70, wageBase: 14000, sdi: false, wcRanges: { '7720': [2.20, 4.00], '7721': [4.00, 6.50] } },
+            'KY': { name: 'Kentucky', sui: 2.70, wageBase: 11400, sdi: false, wcRanges: { '7720': [3.00, 5.00], '7721': [5.00, 8.00] } },
+            'LA': { name: 'Louisiana', sui: 1.65, wageBase: 7700, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'ME': { name: 'Maine', sui: 2.37, wageBase: 12000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'MD': { name: 'Maryland', sui: 2.30, wageBase: 8500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'MA': { name: 'Massachusetts', sui: 2.42, wageBase: 15000, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'MI': { name: 'Michigan', sui: 2.70, wageBase: 9500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'MN': { name: 'Minnesota', sui: 2.00, wageBase: 40000, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'MS': { name: 'Mississippi', sui: 2.70, wageBase: 14000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'MO': { name: 'Missouri', sui: 2.376, wageBase: 10500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'MT': { name: 'Montana', sui: 1.78, wageBase: 40500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'NE': { name: 'Nebraska', sui: 1.25, wageBase: 9000, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'NV': { name: 'Nevada', sui: 2.95, wageBase: 40600, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'NH': { name: 'New Hampshire', sui: 2.70, wageBase: 14000, sdi: false, wcRanges: { '7720': [3.00, 5.00], '7721': [5.00, 8.00] } },
+            'NJ': { name: 'New Jersey', sui: 2.80, wageBase: 42300, sdi: true, sdiRate: 0.10, sdiWageBase: 161400, wcRanges: { '7720': [4.00, 7.00], '7721': [7.00, 11.00] } },
+            'NM': { name: 'New Mexico', sui: 2.00, wageBase: 30100, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'NY': { name: 'New York', sui: 4.025, wageBase: 12500, sdi: true, sdiRate: 0.50, sdiWageBase: 78000, wcRanges: { '7720': [4.00, 7.50], '7721': [7.50, 12.00] }, locals: [
+                { name: 'NYC Metro Commuter Tax', type: 'MTA Tax', rate: 0.34 },
+                { name: 'Yonkers', type: 'Payroll Tax', rate: 0.50 }
+            ]},
+            'NC': { name: 'North Carolina', sui: 1.00, wageBase: 29600, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'ND': { name: 'North Dakota', sui: 1.02, wageBase: 40800, sdi: false, wcRanges: { '7720': [1.50, 3.00], '7721': [3.00, 5.00] } },
+            'OH': { name: 'Ohio', sui: 2.70, wageBase: 9000, sdi: false, wcRanges: { '7720': [3.50, 6.00], '7721': [6.00, 9.50] }, locals: [
+                { name: 'Columbus', type: 'City Income Tax', rate: 2.50, note: 'Employer withholding' },
+                { name: 'Cleveland', type: 'City Income Tax', rate: 2.50, note: 'Employer withholding' },
+                { name: 'Cincinnati', type: 'City Income Tax', rate: 1.80, note: 'Employer withholding' }
+            ]},
+            'OK': { name: 'Oklahoma', sui: 1.50, wageBase: 25700, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'OR': { name: 'Oregon', sui: 2.60, wageBase: 52800, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'PA': { name: 'Pennsylvania', sui: 3.6785, wageBase: 10000, sdi: false, wcRanges: { '7720': [4.00, 7.00], '7721': [7.00, 11.00] }, locals: [
+                { name: 'Philadelphia', type: 'BIRT/NPT', rate: 1.415, note: 'Business taxes on wages' },
+                { name: 'Pittsburgh', type: 'LST', rate: 52, note: '$52/year per employee (flat)' }
+            ]},
+            'RI': { name: 'Rhode Island', sui: 1.21, wageBase: 29200, sdi: true, sdiRate: 1.10, sdiWageBase: 87300, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'SC': { name: 'South Carolina', sui: 0.41, wageBase: 14000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'SD': { name: 'South Dakota', sui: 1.20, wageBase: 15000, sdi: false, wcRanges: { '7720': [1.50, 3.00], '7721': [3.00, 5.00] } },
+            'TN': { name: 'Tennessee', sui: 2.70, wageBase: 7000, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'TX': { name: 'Texas', sui: 2.70, wageBase: 9000, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'UT': { name: 'Utah', sui: 1.10, wageBase: 44800, sdi: false, wcRanges: { '7720': [1.50, 3.00], '7721': [3.00, 5.00] } },
+            'VT': { name: 'Vermont', sui: 1.00, wageBase: 16100, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'VA': { name: 'Virginia', sui: 2.50, wageBase: 8000, sdi: false, wcRanges: { '7720': [2.00, 3.50], '7721': [3.50, 6.00] } },
+            'WA': { name: 'Washington', sui: 1.29, wageBase: 68500, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'WV': { name: 'West Virginia', sui: 2.70, wageBase: 9000, sdi: false, wcRanges: { '7720': [3.00, 5.50], '7721': [5.50, 9.00] } },
+            'WI': { name: 'Wisconsin', sui: 3.05, wageBase: 14000, sdi: false, wcRanges: { '7720': [2.50, 4.50], '7721': [4.50, 7.50] } },
+            'WY': { name: 'Wyoming', sui: 1.69, wageBase: 30900, sdi: false, wcRanges: { '7720': [1.50, 3.00], '7721': [3.00, 5.00] } },
+            'DC': { name: 'District of Columbia', sui: 2.70, wageBase: 9000, sdi: false, wcRanges: { '7720': [3.50, 6.00], '7721': [6.00, 9.50] } }
+        };
+
+        function initializeTaxBudget() {
+            const stateSelect = document.getElementById('taxState');
+            stateSelect.innerHTML = '<option value="">Select State...</option>';
+            
+            // Sort states by name
+            const sortedStates = Object.entries(stateTaxData)
+                .sort((a, b) => a[1].name.localeCompare(b[1].name));
+            
+            sortedStates.forEach(([code, data]) => {
+                const option = document.createElement('option');
+                option.value = code;
+                option.textContent = data.name;
+                stateSelect.appendChild(option);
+            });
+        }
+
+        function updateTaxRates() {
+            const stateCode = document.getElementById('taxState').value;
+            const localitySelect = document.getElementById('taxLocality');
+            
+            // Reset locality dropdown
+            localitySelect.innerHTML = '<option value="">No local taxes</option>';
+            
+            if (!stateCode || !stateTaxData[stateCode]) {
+                document.getElementById('suiRateDisplay').textContent = '--%';
+                document.getElementById('suiWageBase').textContent = 'Select state to view rate';
+                document.getElementById('sdiCard').style.display = 'none';
+                document.getElementById('localTaxSection').style.display = 'none';
+                updateWcRateReference();
+                calculateTaxBudget();
+                return;
+            }
+            
+            const stateData = stateTaxData[stateCode];
+            
+            // Update SUI display
+            document.getElementById('suiRateDisplay').textContent = stateData.sui.toFixed(2) + '%';
+            document.getElementById('suiWageBase').textContent = 'On first $' + stateData.wageBase.toLocaleString() + '/employee';
+            document.getElementById('suiRateCell').textContent = stateData.sui.toFixed(2) + '%';
+            
+            // Update SDI if applicable
+            if (stateData.sdi) {
+                document.getElementById('sdiCard').style.display = 'block';
+                document.getElementById('sdiRateDisplay').textContent = stateData.sdiRate.toFixed(2) + '%';
+                document.getElementById('sdiDetail').textContent = 'On wages up to $' + stateData.sdiWageBase.toLocaleString();
+                document.getElementById('sdiRow').style.display = '';
+                document.getElementById('sdiRateCell').textContent = stateData.sdiRate.toFixed(2) + '%';
+            } else {
+                document.getElementById('sdiCard').style.display = 'none';
+                document.getElementById('sdiRow').style.display = 'none';
+            }
+            
+            // Update local taxes
+            if (stateData.locals && stateData.locals.length > 0) {
+                document.getElementById('localTaxSection').style.display = 'block';
+                
+                stateData.locals.forEach(local => {
+                    const option = document.createElement('option');
+                    option.value = JSON.stringify(local);
+                    option.textContent = local.name + ' (' + local.type + ')';
+                    localitySelect.appendChild(option);
+                });
+            } else {
+                document.getElementById('localTaxSection').style.display = 'none';
+            }
+            
+            updateWcRateReference();
+            calculateTaxBudget();
+        }
+
+        function updateWcRateReference() {
+            const stateCode = document.getElementById('taxState').value;
+            const classCode = document.getElementById('wcClassCode').value;
+            const rangesDiv = document.getElementById('wcRateRanges');
+            
+            if (!stateCode || !stateTaxData[stateCode]) {
+                rangesDiv.innerHTML = '<p style="color: var(--text-secondary); font-size: 0.8rem;">Select a state to see rate ranges</p>';
+                return;
+            }
+            
+            const stateData = stateTaxData[stateCode];
+            const wcRanges = stateData.wcRanges || {};
+            
+            let html = '';
+            
+            if (wcRanges['7720']) {
+                html += `<div class="wc-rate-range">
+                    <span class="wc-class-code">7720 - Security Guard (Unarmed)</span>
+                    <span class="wc-rate-values">$${wcRanges['7720'][0].toFixed(2)} - $${wcRanges['7720'][1].toFixed(2)}</span>
+                </div>`;
+            }
+            
+            if (wcRanges['7721']) {
+                html += `<div class="wc-rate-range">
+                    <span class="wc-class-code">7721 - Security Guard (Armed)</span>
+                    <span class="wc-rate-values">$${wcRanges['7721'][0].toFixed(2)} - $${wcRanges['7721'][1].toFixed(2)}</span>
+                </div>`;
+            }
+            
+            html += `<div class="wc-rate-range">
+                <span class="wc-class-code">8810 - Clerical Office</span>
+                <span class="wc-rate-values">$0.15 - $0.45</span>
+            </div>`;
+            
+            rangesDiv.innerHTML = html || '<p style="color: var(--text-secondary); font-size: 0.8rem;">No rate data available for this state</p>';
+        }
+
+        function calculateTaxBudget() {
+            // Get wages from Physical Personnel section
+            const positions = getPositionData();
+            const weeksPerYear = 52;
+            
+            let totalWeeklyWages = 0;
+            let totalWeeklyHours = 0;
+            
+            positions.forEach(pos => {
+                totalWeeklyWages += pos.hours * pos.payRate;
+                totalWeeklyHours += pos.hours;
+            });
+            
+            const annualWages = totalWeeklyWages * weeksPerYear;
+            const positionCount = positions.length || 1;
+            
+            // Federal taxes (always the same)
+            const ssRate = 6.2;
+            const ssWageLimit = 168600;
+            const medRate = 1.45;
+            const futaRate = 0.6;
+            const futaWageLimit = 7000;
+            
+            // Calculate SS (capped per employee)
+            const ssWagesPerEmployee = Math.min(annualWages / positionCount, ssWageLimit);
+            const ssTaxableWages = ssWagesPerEmployee * positionCount;
+            const ssCost = ssTaxableWages * (ssRate / 100);
+            
+            // Medicare (no cap)
+            const medCost = annualWages * (medRate / 100);
+            
+            // FUTA (capped per employee)
+            const futaWagesPerEmployee = Math.min(annualWages / positionCount, futaWageLimit);
+            const futaTaxableWages = futaWagesPerEmployee * positionCount;
+            const futaCost = futaTaxableWages * (futaRate / 100);
+            
+            // State taxes
+            const stateCode = document.getElementById('taxState').value;
+            let suiCost = 0;
+            let sdiCost = 0;
+            let suiTaxableWages = 0;
+            let sdiTaxableWages = 0;
+            
+            if (stateCode && stateTaxData[stateCode]) {
+                const stateData = stateTaxData[stateCode];
+                
+                // SUI
+                const suiWagesPerEmployee = Math.min(annualWages / positionCount, stateData.wageBase);
+                suiTaxableWages = suiWagesPerEmployee * positionCount;
+                suiCost = suiTaxableWages * (stateData.sui / 100);
+                
+                // SDI (if applicable)
+                if (stateData.sdi) {
+                    const sdiWagesPerEmployee = Math.min(annualWages / positionCount, stateData.sdiWageBase);
+                    sdiTaxableWages = sdiWagesPerEmployee * positionCount;
+                    sdiCost = sdiTaxableWages * (stateData.sdiRate / 100);
+                }
+            }
+            
+            // Local taxes
+            let localTaxCost = 0;
+            let localTaxName = '';
+            let localTaxRate = 0;
+            const localityValue = document.getElementById('taxLocality').value;
+            
+            if (localityValue) {
+                try {
+                    const localData = JSON.parse(localityValue);
+                    localTaxName = localData.name + ' (' + localData.type + ')';
+                    localTaxRate = localData.rate;
+                    localTaxCost = annualWages * (localTaxRate / 100);
+                    
+                    document.getElementById('localTaxRow').style.display = '';
+                    document.getElementById('localTaxName').textContent = localTaxName;
+                    document.getElementById('localTaxRateCell').textContent = localTaxRate.toFixed(2) + '%';
+                    document.getElementById('localTaxWages').textContent = formatCurrency(annualWages);
+                    document.getElementById('localTaxCost').textContent = formatCurrency(localTaxCost);
+                } catch (e) {
+                    document.getElementById('localTaxRow').style.display = 'none';
+                }
+            } else {
+                document.getElementById('localTaxRow').style.display = 'none';
+            }
+            
+            // Other local tax (manual entry)
+            let otherLocalCost = 0;
+            const otherLocalName = document.getElementById('otherLocalTaxName').value;
+            const otherLocalRate = parseFloat(document.getElementById('otherLocalTaxRate').value) || 0;
+            
+            if (otherLocalRate > 0) {
+                otherLocalCost = annualWages * (otherLocalRate / 100);
+                document.getElementById('otherLocalRow').style.display = '';
+                document.getElementById('otherLocalName').textContent = otherLocalName || 'Other Local Tax';
+                document.getElementById('otherLocalRateCell').textContent = otherLocalRate.toFixed(2) + '%';
+                document.getElementById('otherLocalWages').textContent = formatCurrency(annualWages);
+                document.getElementById('otherLocalCost').textContent = formatCurrency(otherLocalCost);
+            } else {
+                document.getElementById('otherLocalRow').style.display = 'none';
+            }
+            
+            // Workers' Comp
+            const wcRate = parseFloat(document.getElementById('wcRate').value) || 0;
+            const wcCost = (annualWages / 100) * wcRate;
+            
+            // General Liability
+            const glRate = parseFloat(document.getElementById('glRate').value) || 0;
+            const glCost = (annualWages / 100) * glRate;
+            
+            // Update table
+            document.getElementById('ssWages').textContent = formatCurrency(ssTaxableWages);
+            document.getElementById('ssCost').textContent = formatCurrency(ssCost);
+            document.getElementById('medWages').textContent = formatCurrency(annualWages);
+            document.getElementById('medCost').textContent = formatCurrency(medCost);
+            document.getElementById('futaWages').textContent = formatCurrency(futaTaxableWages);
+            document.getElementById('futaCost').textContent = formatCurrency(futaCost);
+            document.getElementById('suiWages').textContent = formatCurrency(suiTaxableWages);
+            document.getElementById('suiCost').textContent = formatCurrency(suiCost);
+            
+            if (stateCode && stateTaxData[stateCode]?.sdi) {
+                document.getElementById('sdiWages').textContent = formatCurrency(sdiTaxableWages);
+                document.getElementById('sdiCost').textContent = formatCurrency(sdiCost);
+            }
+            
+            document.getElementById('wcRateCell').textContent = '$' + wcRate.toFixed(2);
+            document.getElementById('wcWages').textContent = formatCurrency(annualWages);
+            document.getElementById('wcCost').textContent = formatCurrency(wcCost);
+            document.getElementById('glRateCell').textContent = '$' + glRate.toFixed(2);
+            document.getElementById('glWages').textContent = formatCurrency(annualWages);
+            document.getElementById('glCost').textContent = formatCurrency(glCost);
+            
+            // Calculate totals
+            const totalTaxBurden = ssCost + medCost + futaCost + suiCost + sdiCost + localTaxCost + otherLocalCost + wcCost + glCost;
+            const effectiveRate = annualWages > 0 ? (totalTaxBurden / annualWages) * 100 : 0;
+            const annualHours = totalWeeklyHours * weeksPerYear;
+            const costPerHour = annualHours > 0 ? totalTaxBurden / annualHours : 0;
+            
+            // Update summary
+            document.getElementById('taxAnnualWages').textContent = formatCurrency(annualWages);
+            document.getElementById('taxTotalBurden').textContent = formatCurrency(totalTaxBurden);
+            document.getElementById('taxEffectiveRate').textContent = effectiveRate.toFixed(2) + '%';
+            document.getElementById('taxPerHour').textContent = formatCurrency(costPerHour);
+            
+            // Update wage source text
+            if (positions.length > 0) {
+                document.getElementById('taxWageSource').textContent = 
+                    `Based on ${positions.length} position(s) totaling ${formatCurrency(totalWeeklyWages)}/week (${formatCurrency(annualWages)}/year)`;
+            } else {
+                document.getElementById('taxWageSource').textContent = 
+                    'Add positions in Physical Personnel section to calculate taxes';
+            }
+        }
+
+        function exportTaxBudget() {
+            const stateCode = document.getElementById('taxState').value;
+            const stateName = stateCode ? stateTaxData[stateCode]?.name || stateCode : 'Not selected';
+            const positions = getPositionData();
+            const weeksPerYear = 52;
+            
+            let totalWeeklyWages = 0;
+            positions.forEach(pos => {
+                totalWeeklyWages += pos.hours * pos.payRate;
+            });
+            const annualWages = totalWeeklyWages * weeksPerYear;
+            
+            // Build CSV
+            let csv = '\ufeff'; // BOM for Excel UTF-8
+            
+            csv += 'EMPLOYER TAX BUDGET\n';
+            csv += 'Generated:,' + new Date().toLocaleDateString() + '\n\n';
+            
+            csv += 'LOCATION\n';
+            csv += 'State,' + stateName + '\n';
+            const localityValue = document.getElementById('taxLocality').value;
+            if (localityValue) {
+                try {
+                    const localData = JSON.parse(localityValue);
+                    csv += 'Locality,' + localData.name + '\n';
+                } catch (e) {}
+            }
+            csv += '\n';
+            
+            csv += 'WAGE INFORMATION\n';
+            csv += 'Number of Positions,' + positions.length + '\n';
+            csv += 'Weekly Wages,' + formatCurrency(totalWeeklyWages) + '\n';
+            csv += 'Annual Wages,' + formatCurrency(annualWages) + '\n\n';
+            
+            csv += 'TAX BREAKDOWN\n';
+            csv += 'Tax Type,Rate,Taxable Wages,Annual Cost\n';
+            csv += 'Social Security (FICA),6.20%,' + document.getElementById('ssWages').textContent + ',' + document.getElementById('ssCost').textContent + '\n';
+            csv += 'Medicare (FICA),1.45%,' + document.getElementById('medWages').textContent + ',' + document.getElementById('medCost').textContent + '\n';
+            csv += 'FUTA,0.60%,' + document.getElementById('futaWages').textContent + ',' + document.getElementById('futaCost').textContent + '\n';
+            csv += 'SUI,' + document.getElementById('suiRateCell').textContent + ',' + document.getElementById('suiWages').textContent + ',' + document.getElementById('suiCost').textContent + '\n';
+            
+            if (stateCode && stateTaxData[stateCode]?.sdi) {
+                csv += 'SDI,' + document.getElementById('sdiRateCell').textContent + ',' + document.getElementById('sdiWages').textContent + ',' + document.getElementById('sdiCost').textContent + '\n';
+            }
+            
+            csv += 'Workers Compensation,' + document.getElementById('wcRateCell').textContent + ',' + document.getElementById('wcWages').textContent + ',' + document.getElementById('wcCost').textContent + '\n';
+            csv += 'General Liability,' + document.getElementById('glRateCell').textContent + ',' + document.getElementById('glWages').textContent + ',' + document.getElementById('glCost').textContent + '\n';
+            csv += '\n';
+            
+            csv += 'SUMMARY\n';
+            csv += 'Total Annual Tax Burden,' + document.getElementById('taxTotalBurden').textContent + '\n';
+            csv += 'Effective Burden Rate,' + document.getElementById('taxEffectiveRate').textContent + '\n';
+            csv += 'Cost Per Hour,' + document.getElementById('taxPerHour').textContent + '\n';
+            
+            // Download
+            try {
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', 'employer_tax_budget_' + new Date().toISOString().slice(0,10) + '.csv');
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            } catch (e) {
+                alert('Unable to export file. Please check your browser settings.');
+                console.error(e);
+            }
+        }
+
         // Initial setup
         initializeClientInfo();
+        initializeTaxBudget();
         toggleDurationType();
         toggleDurationType();
         toggleHoursInput();
