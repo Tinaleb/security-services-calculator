@@ -937,6 +937,411 @@
             color: var(--text-primary);
         }
 
+        /* Wage Analysis Styles */
+        .wage-analysis-section {
+            padding: 1rem 0;
+        }
+
+        .wage-section-title {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .wage-level-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .wage-level-btn {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .wage-level-btn:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .wage-level-btn.active {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .wage-modifier-group {
+            background: var(--bg-input);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .wage-modifier-title {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .wage-modifier-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .wage-modifier-btn {
+            padding: 0.5rem 0.75rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .wage-modifier-btn:hover {
+            border-color: var(--accent-purple);
+        }
+
+        .wage-modifier-btn.active {
+            background: rgba(168, 85, 247, 0.15);
+            border-color: var(--accent-purple);
+            color: var(--accent-purple);
+        }
+
+        .wage-modifier-btn.armed.active {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: var(--accent-red);
+            color: var(--accent-red);
+        }
+
+        .wage-modifier-btn.clearance.active {
+            background: rgba(16, 185, 129, 0.15);
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        .bls-data-box {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .bls-data-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .bls-data-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .bls-data-source {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .bls-percentile-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .bls-percentile-item {
+            background: var(--bg-card);
+            border-radius: 6px;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+        }
+
+        .bls-percentile-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .bls-percentile-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+
+        .bls-percentile-item.median {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .bls-percentile-item.median .bls-percentile-value {
+            color: var(--accent-green);
+        }
+
+        .wage-modifier-applied {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--accent-purple);
+        }
+
+        .search-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-btn {
+            padding: 0.75rem 1rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .search-btn:hover {
+            background: var(--bg-card);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .findings-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .findings-table th {
+            background: var(--bg-input);
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .findings-table td {
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .findings-table tr:hover {
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .findings-table .wage-cell {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .findings-table .link-cell a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .findings-table .link-cell a:hover {
+            text-decoration: underline;
+        }
+
+        .findings-table .actions-cell {
+            white-space: nowrap;
+        }
+
+        .findings-table .actions-cell button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.25rem;
+            margin-right: 0.25rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+
+        .findings-table .actions-cell button:hover {
+            opacity: 1;
+        }
+
+        .add-finding-btn {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .add-finding-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .finding-form {
+            background: var(--bg-input);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .finding-form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .finding-form-actions {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+
+        .wage-comparison-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 10px;
+            padding: 1.25rem;
+        }
+
+        .wage-comparison-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .wage-comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .wage-comparison-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .wage-comparison-values {
+            text-align: right;
+        }
+
+        .wage-comparison-hourly {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .wage-comparison-annual {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .wage-comparison-diff {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+
+        .wage-comparison-diff.positive {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+        }
+
+        .wage-comparison-diff.negative {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--accent-red);
+        }
+
+        .wage-suggestion-box {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            border-radius: 8px;
+        }
+
+        .wage-suggestion-title {
+            font-size: 0.8rem;
+            color: var(--accent-amber);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .wage-suggestion-range {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .findings-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .no-findings {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .clear-findings-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 6px;
+            color: var(--accent-red);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .clear-findings-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+        }
+
         .custom-position-input {
             margin-top: 0.5rem;
         }
@@ -2334,6 +2739,7 @@
                     <button class="tab active" onclick="switchTab('summary')">Summary</button>
                     <button class="tab" onclick="switchTab('breakdown')">Detailed Breakdown</button>
                     <button class="tab" onclick="switchTab('taxbudget')">Tax Budget</button>
+                    <button class="tab" onclick="switchTab('wageanalysis')">Wage Analysis</button>
                 </div>
 
                 <div id="summaryTab">
@@ -2718,6 +3124,310 @@
 
                         <div class="row" style="margin-top: 1.5rem;">
                             <button class="export-btn tax-export" onclick="exportTaxBudget()">📊 Export Tax Budget</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wage Analysis Tab -->
+                <div id="wageAnalysisTab" class="hidden">
+                    <div class="wage-analysis-section">
+                        <!-- Position Selection -->
+                        <div class="wage-section-title">📋 Position Selection</div>
+                        
+                        <div class="wage-level-selector">
+                            <button type="button" class="wage-level-btn active" id="levelOfficer" onclick="selectWageLevel('officer')">Officer/Guard</button>
+                            <button type="button" class="wage-level-btn" id="levelSupervisor" onclick="selectWageLevel('supervisor')">Supervisor</button>
+                            <button type="button" class="wage-level-btn" id="levelManager" onclick="selectWageLevel('manager')">Manager</button>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Position Type</label>
+                                <select id="wagePositionType" onchange="updateWageAnalysis()">
+                                    <optgroup label="Officer/Guard" id="officerOptions">
+                                        <option value="unarmed-officer">Unarmed Security Officer</option>
+                                        <option value="armed-officer">Armed Security Officer</option>
+                                        <option value="unarmed-guard">Unarmed Security Guard</option>
+                                        <option value="armed-guard">Armed Security Guard</option>
+                                    </optgroup>
+                                    <optgroup label="Supervisor" id="supervisorOptions" class="hidden">
+                                        <option value="site-supervisor">Site Supervisor</option>
+                                        <option value="shift-supervisor">Shift Supervisor</option>
+                                        <option value="shift-lead">Shift Lead</option>
+                                    </optgroup>
+                                    <optgroup label="Manager" id="managerOptions" class="hidden">
+                                        <option value="account-manager">Account Manager</option>
+                                        <option value="field-service-manager">Field Service Manager</option>
+                                        <option value="operations-manager">Operations Manager</option>
+                                        <option value="district-manager">District Manager</option>
+                                        <option value="regional-manager">Regional Manager</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Armed Modifier -->
+                        <div class="wage-modifier-group">
+                            <div class="wage-modifier-title">🔫 Armed Status</div>
+                            <div class="wage-modifier-options">
+                                <button type="button" class="wage-modifier-btn armed active" data-armed="0" onclick="selectArmedModifier(this)">Unarmed (0%)</button>
+                                <button type="button" class="wage-modifier-btn armed" data-armed="10" onclick="selectArmedModifier(this)">Basic +10%</button>
+                                <button type="button" class="wage-modifier-btn armed" data-armed="15" onclick="selectArmedModifier(this)">Taser +15%</button>
+                                <button type="button" class="wage-modifier-btn armed" data-armed="20" onclick="selectArmedModifier(this)">Firearm +20%</button>
+                                <button type="button" class="wage-modifier-btn armed" data-armed="25" onclick="selectArmedModifier(this)">Firearm+Taser +25%</button>
+                                <button type="button" class="wage-modifier-btn armed" data-armed="custom" onclick="selectArmedModifier(this)">Custom</button>
+                            </div>
+                            <div id="customArmedInput" class="hidden" style="margin-top: 0.75rem;">
+                                <div class="input-group" style="max-width: 150px;">
+                                    <input type="number" id="customArmedPercent" value="0" min="0" max="100" onchange="updateWageAnalysis()">
+                                    <span class="input-suffix">%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clearance Modifier -->
+                        <div class="wage-modifier-group">
+                            <div class="wage-modifier-title">🔒 Security Clearance</div>
+                            <div class="wage-modifier-options">
+                                <button type="button" class="wage-modifier-btn clearance active" data-clearance="0" onclick="selectClearanceModifier(this)">None (0%)</button>
+                                <button type="button" class="wage-modifier-btn clearance" data-clearance="10" onclick="selectClearanceModifier(this)">Public Trust +10%</button>
+                                <button type="button" class="wage-modifier-btn clearance" data-clearance="20" onclick="selectClearanceModifier(this)">Secret +20%</button>
+                                <button type="button" class="wage-modifier-btn clearance" data-clearance="25" onclick="selectClearanceModifier(this)">Top Secret +25%</button>
+                                <button type="button" class="wage-modifier-btn clearance" data-clearance="30" onclick="selectClearanceModifier(this)">TS/SCI +30%</button>
+                                <button type="button" class="wage-modifier-btn clearance" data-clearance="custom" onclick="selectClearanceModifier(this)">Custom</button>
+                            </div>
+                            <div id="customClearanceInput" class="hidden" style="margin-top: 0.75rem;">
+                                <div class="input-group" style="max-width: 150px;">
+                                    <input type="number" id="customClearancePercent" value="0" min="0" max="100" onchange="updateWageAnalysis()">
+                                    <span class="input-suffix">%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="wage-section-title">📍 Location</div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label>State</label>
+                                <select id="wageState" onchange="updateWageMetros(); updateWageAnalysis()">
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Metro Area</label>
+                                <select id="wageMetro" onchange="updateWageAnalysis()">
+                                    <option value="statewide">Statewide Average</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+                            <a href="https://www.bls.gov/oes/current/oessrcst.htm" target="_blank" style="color: var(--accent-blue);">🔗 View all metro areas on BLS.gov</a>
+                        </p>
+
+                        <!-- BLS Data Display -->
+                        <div class="wage-section-title">📊 BLS Baseline Data (2024)</div>
+                        <div class="bls-data-box">
+                            <div class="bls-data-header">
+                                <div class="bls-data-title" id="blsPositionTitle">Security Guards (SOC 33-9032)</div>
+                                <div class="bls-data-source">Source: Bureau of Labor Statistics</div>
+                            </div>
+                            <div class="bls-percentile-grid">
+                                <div class="bls-percentile-item">
+                                    <div class="bls-percentile-label">10th %</div>
+                                    <div class="bls-percentile-value" id="blsP10">$0.00</div>
+                                </div>
+                                <div class="bls-percentile-item">
+                                    <div class="bls-percentile-label">25th %</div>
+                                    <div class="bls-percentile-value" id="blsP25">$0.00</div>
+                                </div>
+                                <div class="bls-percentile-item median">
+                                    <div class="bls-percentile-label">Median</div>
+                                    <div class="bls-percentile-value" id="blsP50">$0.00</div>
+                                </div>
+                                <div class="bls-percentile-item">
+                                    <div class="bls-percentile-label">75th %</div>
+                                    <div class="bls-percentile-value" id="blsP75">$0.00</div>
+                                </div>
+                                <div class="bls-percentile-item">
+                                    <div class="bls-percentile-label">90th %</div>
+                                    <div class="bls-percentile-value" id="blsP90">$0.00</div>
+                                </div>
+                            </div>
+                            <div class="wage-modifier-applied" id="modifierAppliedNote" style="display: none;">
+                                <strong>Modifiers Applied:</strong> <span id="modifierDescription">None</span>
+                            </div>
+                        </div>
+
+                        <!-- Search Job Boards -->
+                        <div class="wage-section-title">🔍 Search Current Job Listings</div>
+                        <div class="search-buttons-grid">
+                            <a href="#" class="search-btn" id="searchIndeed" target="_blank">📋 Indeed</a>
+                            <a href="#" class="search-btn" id="searchZipRecruiter" target="_blank">💼 ZipRecruiter</a>
+                            <a href="#" class="search-btn" id="searchLinkedIn" target="_blank">🔗 LinkedIn</a>
+                            <a href="#" class="search-btn" id="searchGlassdoor" target="_blank">🚪 Glassdoor</a>
+                            <a href="#" class="search-btn" id="searchUSAJobs" target="_blank">🏛️ USAJobs</a>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+                            Additional resources: 
+                            <a href="https://www.bls.gov/oes/current/oes339032.htm" target="_blank" style="color: var(--accent-blue);">BLS OES</a> • 
+                            <a href="https://www.onetonline.org/link/summary/33-9032.00" target="_blank" style="color: var(--accent-blue);">O*NET</a> • 
+                            <a href="https://www.careeronestop.org/Toolkit/Wages/find-salary.aspx" target="_blank" style="color: var(--accent-blue);">CareerOneStop</a>
+                        </p>
+
+                        <!-- Findings Log -->
+                        <div class="wage-section-title">📝 Your Research Findings</div>
+                        <div class="findings-count" id="findingsCount">0 findings saved</div>
+                        
+                        <div id="findingFormContainer" class="hidden">
+                            <div class="finding-form">
+                                <div class="finding-form-row">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Source</label>
+                                        <select id="findingSource">
+                                            <option value="Indeed">Indeed</option>
+                                            <option value="ZipRecruiter">ZipRecruiter</option>
+                                            <option value="LinkedIn">LinkedIn</option>
+                                            <option value="Glassdoor">Glassdoor</option>
+                                            <option value="USAJobs">USAJobs</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Company</label>
+                                        <input type="text" id="findingCompany" placeholder="Company name">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Position</label>
+                                        <input type="text" id="findingPosition" placeholder="Position title">
+                                    </div>
+                                </div>
+                                <div class="finding-form-row">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Hourly Wage</label>
+                                        <div class="input-group">
+                                            <span class="input-prefix">$</span>
+                                            <input type="number" id="findingWage" step="0.01" min="0" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Date Found</label>
+                                        <input type="date" id="findingDate">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Link/URL</label>
+                                        <input type="text" id="findingLink" placeholder="https://...">
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label>Notes</label>
+                                    <input type="text" id="findingNotes" placeholder="Benefits, requirements, etc.">
+                                </div>
+                                <div class="finding-form-actions">
+                                    <button type="button" class="toggle-btn" onclick="cancelFinding()">Cancel</button>
+                                    <button type="button" class="add-finding-btn" onclick="saveFinding()">Save Finding</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="findingsTableContainer">
+                            <table class="findings-table" id="findingsTable">
+                                <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Company</th>
+                                        <th>Position</th>
+                                        <th>Wage</th>
+                                        <th>Date</th>
+                                        <th>Link</th>
+                                        <th>Notes</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="findingsTableBody">
+                                </tbody>
+                            </table>
+                            <div id="noFindings" class="no-findings">
+                                No findings yet. Search job boards and log your research above.
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <button type="button" class="add-finding-btn" onclick="showFindingForm()">+ Add Finding</button>
+                            <button type="button" class="clear-findings-btn" id="clearFindingsBtn" onclick="clearAllFindings()" style="display: none;">🗑️ Clear All</button>
+                        </div>
+
+                        <!-- Wage Comparison -->
+                        <div class="wage-section-title" style="margin-top: 1.5rem;">📈 Wage Comparison</div>
+                        
+                        <div class="row" style="margin-bottom: 1rem;">
+                            <div class="form-group">
+                                <label>Your Current Pay Rate (for comparison)</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">$</span>
+                                    <input type="number" id="wageCompareRate" value="0" step="0.01" min="0" onchange="updateWageComparison()">
+                                    <span class="input-suffix">/hr</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Or Select from Personnel</label>
+                                <select id="wageComparePosition" onchange="loadPositionRate()">
+                                    <option value="">-- Select Position --</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="wage-comparison-box">
+                            <div class="wage-comparison-row">
+                                <div class="wage-comparison-label">BLS Median (adjusted)</div>
+                                <div class="wage-comparison-values">
+                                    <span class="wage-comparison-hourly" id="comparisonBLS">$0.00/hr</span>
+                                    <div class="wage-comparison-annual" id="comparisonBLSAnnual">$0/year</div>
+                                </div>
+                            </div>
+                            <div class="wage-comparison-row">
+                                <div class="wage-comparison-label">Your Research Average</div>
+                                <div class="wage-comparison-values">
+                                    <span class="wage-comparison-hourly" id="comparisonResearch">$0.00/hr</span>
+                                    <div class="wage-comparison-annual" id="comparisonResearchAnnual">$0/year</div>
+                                </div>
+                            </div>
+                            <div class="wage-comparison-row">
+                                <div class="wage-comparison-label">Your Current Rate</div>
+                                <div class="wage-comparison-values">
+                                    <span class="wage-comparison-hourly" id="comparisonYours">$0.00/hr</span>
+                                    <span class="wage-comparison-diff" id="comparisonDiff"></span>
+                                    <div class="wage-comparison-annual" id="comparisonYoursAnnual">$0/year</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wage-suggestion-box">
+                            <div class="wage-suggestion-title">💡 Suggested Competitive Range</div>
+                            <div class="wage-suggestion-range" id="suggestedRange">$0.00 - $0.00/hr</div>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 0;">Based on 25th-75th percentile of BLS data with modifiers applied</p>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="wage-section-title" style="margin-top: 1.5rem;">⚡ Actions</div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Apply Rate to Position (Optional)</label>
+                                <select id="applyToPosition">
+                                    <option value="">-- Select Position to Update --</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Rate to Apply</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">$</span>
+                                    <input type="number" id="rateToApply" value="0" step="0.01" min="0">
+                                    <span class="input-suffix">/hr</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button type="button" class="add-finding-btn" onclick="applyRateToPosition()">Apply to Position</button>
+                            <button type="button" class="export-btn" onclick="exportWageAnalysis()">📊 Export Wage Analysis</button>
                         </div>
                     </div>
                 </div>
@@ -4209,7 +4919,8 @@
             document.querySelectorAll('.tabs .tab').forEach(t => {
                 if ((tab === 'summary' && t.textContent === 'Summary') ||
                     (tab === 'breakdown' && t.textContent === 'Detailed Breakdown') ||
-                    (tab === 'taxbudget' && t.textContent === 'Tax Budget')) {
+                    (tab === 'taxbudget' && t.textContent === 'Tax Budget') ||
+                    (tab === 'wageanalysis' && t.textContent === 'Wage Analysis')) {
                     t.classList.add('active');
                 }
             });
@@ -4217,6 +4928,7 @@
             document.getElementById('summaryTab').classList.add('hidden');
             document.getElementById('breakdownTab').classList.add('hidden');
             document.getElementById('taxBudgetTab').classList.add('hidden');
+            document.getElementById('wageAnalysisTab').classList.add('hidden');
 
             if (tab === 'summary') {
                 document.getElementById('summaryTab').classList.remove('hidden');
@@ -4225,6 +4937,9 @@
             } else if (tab === 'taxbudget') {
                 document.getElementById('taxBudgetTab').classList.remove('hidden');
                 calculateTaxBudget();
+            } else if (tab === 'wageanalysis') {
+                document.getElementById('wageAnalysisTab').classList.remove('hidden');
+                initializeWageAnalysis();
             }
         }
 
@@ -5801,6 +6516,492 @@
                 URL.revokeObjectURL(url);
             } catch (e) {
                 alert('Unable to export file. Please check your browser settings.');
+                console.error(e);
+            }
+        }
+
+        // ============================================
+        // WAGE ANALYSIS FUNCTIONS
+        // ============================================
+
+        // BLS Wage Data by State (2024 data)
+        const blsWageData = {
+            'AL': { name: 'Alabama', officer: [11.02, 12.50, 14.75, 17.50, 21.25], supervisor: [16.50, 20.25, 25.50, 32.00, 40.50], manager: [28.00, 38.50, 52.00, 70.00, 92.00], metros: ['Birmingham-Hoover', 'Huntsville', 'Mobile'] },
+            'AK': { name: 'Alaska', officer: [15.50, 17.75, 21.00, 25.50, 31.00], supervisor: [22.00, 27.50, 35.00, 44.00, 55.00], manager: [35.00, 48.00, 65.00, 85.00, 110.00], metros: ['Anchorage', 'Fairbanks'] },
+            'AZ': { name: 'Arizona', officer: [13.25, 15.00, 17.50, 21.00, 26.00], supervisor: [19.00, 24.00, 31.00, 40.00, 50.00], manager: [32.00, 44.00, 60.00, 80.00, 105.00], metros: ['Phoenix-Mesa-Scottsdale', 'Tucson', 'Flagstaff'] },
+            'AR': { name: 'Arkansas', officer: [10.75, 12.25, 14.25, 17.00, 20.50], supervisor: [15.50, 19.50, 24.50, 31.00, 39.00], manager: [27.00, 37.00, 50.00, 67.00, 88.00], metros: ['Little Rock-North Little Rock', 'Fayetteville-Springdale'] },
+            'CA': { name: 'California', officer: [16.00, 17.50, 20.25, 25.00, 32.00], supervisor: [23.00, 29.00, 38.00, 49.00, 62.00], manager: [40.00, 55.00, 75.00, 100.00, 130.00], metros: ['Los Angeles-Long Beach', 'San Francisco-Oakland', 'San Diego-Carlsbad', 'Sacramento'] },
+            'CO': { name: 'Colorado', officer: [14.50, 16.50, 19.50, 24.00, 30.00], supervisor: [21.00, 26.50, 34.00, 43.50, 55.00], manager: [36.00, 50.00, 68.00, 90.00, 118.00], metros: ['Denver-Aurora-Lakewood', 'Colorado Springs', 'Boulder'] },
+            'CT': { name: 'Connecticut', officer: [14.75, 16.75, 19.75, 24.50, 30.50], supervisor: [21.50, 27.00, 35.00, 45.00, 57.00], manager: [38.00, 52.00, 72.00, 95.00, 125.00], metros: ['Hartford-West Hartford', 'New Haven', 'Bridgeport-Stamford'] },
+            'DE': { name: 'Delaware', officer: [13.50, 15.25, 18.00, 22.00, 27.50], supervisor: [19.50, 24.50, 31.50, 40.50, 51.00], manager: [34.00, 47.00, 64.00, 85.00, 112.00], metros: ['Wilmington', 'Dover'] },
+            'DC': { name: 'District of Columbia', officer: [17.00, 19.50, 24.00, 30.00, 38.00], supervisor: [25.00, 32.00, 42.00, 54.00, 68.00], manager: [45.00, 62.00, 85.00, 112.00, 145.00], metros: ['Washington-Arlington-Alexandria'] },
+            'FL': { name: 'Florida', officer: [12.75, 14.50, 17.00, 20.50, 25.50], supervisor: [18.50, 23.50, 30.00, 38.50, 48.50], manager: [32.00, 44.00, 60.00, 80.00, 105.00], metros: ['Miami-Fort Lauderdale', 'Tampa-St. Petersburg', 'Orlando-Kissimmee', 'Jacksonville'] },
+            'GA': { name: 'Georgia', officer: [12.25, 14.00, 16.50, 20.00, 25.00], supervisor: [17.75, 22.50, 29.00, 37.00, 47.00], manager: [31.00, 42.50, 58.00, 77.00, 102.00], metros: ['Atlanta-Sandy Springs', 'Augusta-Richmond', 'Savannah'] },
+            'HI': { name: 'Hawaii', officer: [14.00, 16.00, 19.00, 23.50, 29.00], supervisor: [20.50, 26.00, 33.50, 43.00, 54.00], manager: [36.00, 49.00, 67.00, 89.00, 116.00], metros: ['Honolulu', 'Kahului-Wailuku-Lahaina'] },
+            'ID': { name: 'Idaho', officer: [12.00, 13.75, 16.00, 19.50, 24.00], supervisor: [17.50, 22.00, 28.00, 36.00, 45.50], manager: [30.00, 41.00, 56.00, 74.00, 98.00], metros: ['Boise City', 'Idaho Falls'] },
+            'IL': { name: 'Illinois', officer: [14.00, 15.75, 18.50, 22.50, 28.00], supervisor: [20.00, 25.50, 33.00, 42.00, 53.00], manager: [35.00, 48.00, 66.00, 87.00, 115.00], metros: ['Chicago-Naperville-Elgin', 'Peoria', 'Springfield'] },
+            'IN': { name: 'Indiana', officer: [12.25, 14.00, 16.50, 20.00, 24.50], supervisor: [17.75, 22.50, 29.00, 37.00, 46.50], manager: [30.00, 42.00, 57.00, 76.00, 100.00], metros: ['Indianapolis-Carmel', 'Fort Wayne', 'South Bend'] },
+            'IA': { name: 'Iowa', officer: [12.50, 14.25, 16.75, 20.25, 25.00], supervisor: [18.00, 23.00, 29.50, 38.00, 48.00], manager: [31.00, 43.00, 58.00, 77.00, 102.00], metros: ['Des Moines-West Des Moines', 'Cedar Rapids', 'Davenport'] },
+            'KS': { name: 'Kansas', officer: [12.00, 13.75, 16.25, 19.75, 24.25], supervisor: [17.50, 22.00, 28.50, 36.50, 46.00], manager: [30.00, 41.50, 56.50, 75.00, 99.00], metros: ['Wichita', 'Kansas City', 'Topeka'] },
+            'KY': { name: 'Kentucky', officer: [11.50, 13.25, 15.50, 18.75, 23.00], supervisor: [16.75, 21.25, 27.50, 35.00, 44.00], manager: [29.00, 40.00, 54.00, 72.00, 95.00], metros: ['Louisville-Jefferson County', 'Lexington-Fayette'] },
+            'LA': { name: 'Louisiana', officer: [10.75, 12.25, 14.50, 17.50, 21.50], supervisor: [15.50, 19.75, 25.50, 32.50, 41.00], manager: [27.00, 37.00, 51.00, 68.00, 90.00], metros: ['New Orleans-Metairie', 'Baton Rouge', 'Shreveport'] },
+            'ME': { name: 'Maine', officer: [13.00, 14.75, 17.25, 21.00, 26.00], supervisor: [18.75, 23.75, 30.50, 39.00, 49.00], manager: [32.00, 44.00, 60.00, 80.00, 105.00], metros: ['Portland-South Portland', 'Bangor'] },
+            'MD': { name: 'Maryland', officer: [14.50, 16.50, 19.50, 24.00, 30.00], supervisor: [21.00, 26.50, 34.50, 44.00, 55.50], manager: [37.00, 51.00, 70.00, 92.00, 120.00], metros: ['Baltimore-Columbia-Towson', 'Bethesda-Rockville'] },
+            'MA': { name: 'Massachusetts', officer: [15.50, 17.50, 20.50, 25.50, 32.00], supervisor: [22.50, 28.50, 37.00, 47.50, 60.00], manager: [40.00, 55.00, 75.00, 99.00, 130.00], metros: ['Boston-Cambridge-Newton', 'Worcester', 'Springfield'] },
+            'MI': { name: 'Michigan', officer: [12.75, 14.50, 17.00, 20.75, 25.50], supervisor: [18.50, 23.50, 30.50, 39.00, 49.00], manager: [32.00, 44.00, 60.00, 80.00, 105.00], metros: ['Detroit-Warren-Dearborn', 'Grand Rapids', 'Ann Arbor'] },
+            'MN': { name: 'Minnesota', officer: [14.00, 15.75, 18.50, 22.50, 28.00], supervisor: [20.00, 25.50, 33.00, 42.00, 53.00], manager: [35.00, 48.00, 66.00, 87.00, 115.00], metros: ['Minneapolis-St. Paul-Bloomington', 'Rochester', 'Duluth'] },
+            'MS': { name: 'Mississippi', officer: [10.25, 11.75, 13.75, 16.50, 20.00], supervisor: [15.00, 19.00, 24.50, 31.00, 39.00], manager: [26.00, 35.50, 48.50, 64.00, 85.00], metros: ['Jackson', 'Gulfport-Biloxi-Pascagoula'] },
+            'MO': { name: 'Missouri', officer: [12.25, 14.00, 16.50, 20.00, 24.75], supervisor: [17.75, 22.50, 29.00, 37.50, 47.00], manager: [31.00, 42.50, 58.00, 77.00, 102.00], metros: ['St. Louis', 'Kansas City', 'Springfield'] },
+            'MT': { name: 'Montana', officer: [12.25, 14.00, 16.50, 20.00, 24.50], supervisor: [17.75, 22.50, 29.00, 37.00, 46.50], manager: [30.00, 42.00, 57.00, 76.00, 100.00], metros: ['Billings', 'Missoula', 'Great Falls'] },
+            'NE': { name: 'Nebraska', officer: [12.75, 14.50, 17.00, 20.50, 25.25], supervisor: [18.50, 23.50, 30.00, 38.50, 48.50], manager: [31.50, 43.50, 59.00, 78.00, 103.00], metros: ['Omaha-Council Bluffs', 'Lincoln'] },
+            'NV': { name: 'Nevada', officer: [13.75, 15.50, 18.25, 22.50, 28.00], supervisor: [20.00, 25.00, 32.50, 41.50, 52.50], manager: [34.00, 47.00, 64.00, 85.00, 112.00], metros: ['Las Vegas-Henderson-Paradise', 'Reno'] },
+            'NH': { name: 'New Hampshire', officer: [14.00, 15.75, 18.50, 22.75, 28.25], supervisor: [20.25, 25.50, 33.00, 42.00, 53.00], manager: [35.00, 48.00, 66.00, 87.00, 115.00], metros: ['Manchester-Nashua', 'Portsmouth'] },
+            'NJ': { name: 'New Jersey', officer: [14.75, 16.75, 19.75, 24.50, 31.00], supervisor: [21.50, 27.00, 35.50, 45.50, 57.50], manager: [38.00, 52.00, 72.00, 95.00, 125.00], metros: ['Newark', 'Trenton', 'Atlantic City-Hammonton'] },
+            'NM': { name: 'New Mexico', officer: [12.00, 13.75, 16.25, 19.75, 24.25], supervisor: [17.50, 22.00, 28.50, 36.50, 46.00], manager: [30.00, 41.50, 56.50, 75.00, 99.00], metros: ['Albuquerque', 'Santa Fe', 'Las Cruces'] },
+            'NY': { name: 'New York', officer: [15.50, 17.50, 21.00, 27.00, 35.00], supervisor: [22.50, 29.00, 38.50, 50.00, 64.00], manager: [42.00, 58.00, 80.00, 106.00, 140.00], metros: ['New York-Newark-Jersey City', 'Buffalo-Cheektowaga-Niagara Falls', 'Albany-Schenectady-Troy'] },
+            'NC': { name: 'North Carolina', officer: [12.50, 14.25, 16.75, 20.25, 25.00], supervisor: [18.00, 23.00, 29.50, 38.00, 48.00], manager: [31.00, 43.00, 58.50, 78.00, 103.00], metros: ['Charlotte-Concord-Gastonia', 'Raleigh', 'Durham-Chapel Hill'] },
+            'ND': { name: 'North Dakota', officer: [13.25, 15.00, 17.50, 21.25, 26.00], supervisor: [19.25, 24.25, 31.00, 40.00, 50.00], manager: [33.00, 45.00, 62.00, 82.00, 108.00], metros: ['Fargo', 'Bismarck', 'Grand Forks'] },
+            'OH': { name: 'Ohio', officer: [12.25, 14.00, 16.50, 20.00, 24.75], supervisor: [17.75, 22.50, 29.00, 37.50, 47.00], manager: [31.00, 42.50, 58.00, 77.00, 102.00], metros: ['Columbus', 'Cleveland-Elyria', 'Cincinnati'] },
+            'OK': { name: 'Oklahoma', officer: [11.25, 12.75, 15.00, 18.25, 22.50], supervisor: [16.25, 20.50, 26.50, 34.00, 43.00], manager: [28.00, 38.50, 52.50, 70.00, 92.00], metros: ['Oklahoma City', 'Tulsa'] },
+            'OR': { name: 'Oregon', officer: [14.50, 16.50, 19.50, 24.00, 30.00], supervisor: [21.00, 26.50, 34.50, 44.00, 55.50], manager: [36.00, 50.00, 68.00, 90.00, 118.00], metros: ['Portland-Vancouver-Hillsboro', 'Salem', 'Eugene'] },
+            'PA': { name: 'Pennsylvania', officer: [12.84, 14.56, 16.85, 19.42, 24.83], supervisor: [18.50, 23.50, 30.00, 38.50, 48.50], manager: [32.00, 44.00, 60.00, 80.00, 105.00], metros: ['Philadelphia-Camden-Wilmington', 'Pittsburgh', 'Allentown-Bethlehem-Easton', 'Scranton--Wilkes-Barre--Hazleton'] },
+            'RI': { name: 'Rhode Island', officer: [14.25, 16.00, 18.75, 23.00, 28.50], supervisor: [20.50, 26.00, 33.50, 43.00, 54.00], manager: [36.00, 49.00, 67.00, 89.00, 116.00], metros: ['Providence-Warwick'] },
+            'SC': { name: 'South Carolina', officer: [11.75, 13.50, 15.75, 19.25, 23.75], supervisor: [17.00, 21.75, 28.00, 36.00, 45.00], manager: [29.50, 40.50, 55.00, 73.00, 97.00], metros: ['Columbia', 'Charleston-North Charleston', 'Greenville-Anderson-Mauldin'] },
+            'SD': { name: 'South Dakota', officer: [12.50, 14.25, 16.75, 20.25, 25.00], supervisor: [18.00, 23.00, 29.50, 38.00, 48.00], manager: [31.00, 43.00, 58.00, 77.00, 102.00], metros: ['Sioux Falls', 'Rapid City'] },
+            'TN': { name: 'Tennessee', officer: [11.75, 13.50, 15.75, 19.25, 23.75], supervisor: [17.00, 21.75, 28.00, 36.00, 45.50], manager: [30.00, 41.00, 56.00, 74.00, 98.00], metros: ['Nashville-Davidson-Murfreesboro', 'Memphis', 'Knoxville'] },
+            'TX': { name: 'Texas', officer: [12.25, 14.00, 16.50, 20.00, 25.00], supervisor: [17.75, 22.50, 29.00, 37.50, 47.50], manager: [31.00, 43.00, 58.50, 78.00, 103.00], metros: ['Houston-The Woodlands-Sugar Land', 'Dallas-Fort Worth-Arlington', 'San Antonio-New Braunfels', 'Austin-Round Rock'] },
+            'UT': { name: 'Utah', officer: [13.00, 14.75, 17.25, 21.00, 26.00], supervisor: [18.75, 24.00, 31.00, 39.50, 50.00], manager: [33.00, 45.00, 61.00, 81.00, 107.00], metros: ['Salt Lake City', 'Provo-Orem', 'Ogden-Clearfield'] },
+            'VT': { name: 'Vermont', officer: [14.00, 15.75, 18.50, 22.50, 28.00], supervisor: [20.00, 25.50, 33.00, 42.00, 53.00], manager: [35.00, 48.00, 65.00, 86.00, 113.00], metros: ['Burlington-South Burlington'] },
+            'VA': { name: 'Virginia', officer: [13.75, 15.50, 18.25, 22.50, 28.50], supervisor: [20.00, 25.00, 32.50, 42.00, 53.00], manager: [35.00, 48.00, 66.00, 87.00, 115.00], metros: ['Virginia Beach-Norfolk-Newport News', 'Richmond', 'Washington-Arlington-Alexandria'] },
+            'WA': { name: 'Washington', officer: [16.50, 18.50, 22.00, 27.00, 34.00], supervisor: [24.00, 30.00, 39.00, 50.00, 63.00], manager: [42.00, 57.00, 78.00, 103.00, 135.00], metros: ['Seattle-Tacoma-Bellevue', 'Spokane-Spokane Valley', 'Vancouver'] },
+            'WV': { name: 'West Virginia', officer: [10.50, 12.00, 14.00, 17.00, 21.00], supervisor: [15.25, 19.25, 25.00, 32.00, 40.00], manager: [26.50, 36.50, 50.00, 66.00, 87.00], metros: ['Charleston', 'Huntington-Ashland'] },
+            'WI': { name: 'Wisconsin', officer: [12.75, 14.50, 17.00, 20.75, 25.50], supervisor: [18.50, 23.50, 30.50, 39.00, 49.00], manager: [32.00, 44.00, 60.00, 79.00, 105.00], metros: ['Milwaukee-Waukesha-West Allis', 'Madison', 'Green Bay'] },
+            'WY': { name: 'Wyoming', officer: [12.50, 14.25, 16.75, 20.25, 25.00], supervisor: [18.00, 23.00, 29.50, 38.00, 48.00], manager: [31.00, 43.00, 58.00, 77.00, 102.00], metros: ['Cheyenne', 'Casper'] }
+        };
+
+        let wageFindings = [];
+        let editingFindingIndex = -1;
+        let currentArmedModifier = 0;
+        let currentClearanceModifier = 0;
+
+        function initializeWageAnalysis() {
+            const savedFindings = localStorage.getItem('wageFindings');
+            if (savedFindings) {
+                wageFindings = JSON.parse(savedFindings);
+            }
+            
+            const stateSelect = document.getElementById('wageState');
+            if (stateSelect.options.length <= 1) {
+                Object.keys(blsWageData).sort((a, b) => blsWageData[a].name.localeCompare(blsWageData[b].name)).forEach(code => {
+                    const option = document.createElement('option');
+                    option.value = code;
+                    option.textContent = blsWageData[code].name;
+                    stateSelect.appendChild(option);
+                });
+            }
+            
+            document.getElementById('findingDate').value = new Date().toISOString().slice(0, 10);
+            populateWagePositionDropdowns();
+            renderFindingsTable();
+            updateWageAnalysis();
+        }
+
+        function selectWageLevel(level) {
+            document.getElementById('levelOfficer').classList.remove('active');
+            document.getElementById('levelSupervisor').classList.remove('active');
+            document.getElementById('levelManager').classList.remove('active');
+            document.getElementById('level' + level.charAt(0).toUpperCase() + level.slice(1)).classList.add('active');
+            
+            const positionSelect = document.getElementById('wagePositionType');
+            Array.from(positionSelect.querySelectorAll('optgroup')).forEach(og => og.classList.add('hidden'));
+            
+            let activeGroup;
+            if (level === 'officer') activeGroup = document.getElementById('officerOptions');
+            else if (level === 'supervisor') activeGroup = document.getElementById('supervisorOptions');
+            else activeGroup = document.getElementById('managerOptions');
+            
+            activeGroup.classList.remove('hidden');
+            const firstOption = activeGroup.querySelector('option');
+            if (firstOption) positionSelect.value = firstOption.value;
+            
+            updateWageAnalysis();
+        }
+
+        function selectArmedModifier(btn) {
+            document.querySelectorAll('.wage-modifier-btn.armed').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const modifier = btn.dataset.armed;
+            if (modifier === 'custom') {
+                document.getElementById('customArmedInput').classList.remove('hidden');
+                currentArmedModifier = parseFloat(document.getElementById('customArmedPercent').value) || 0;
+            } else {
+                document.getElementById('customArmedInput').classList.add('hidden');
+                currentArmedModifier = parseFloat(modifier);
+            }
+            updateWageAnalysis();
+        }
+
+        function selectClearanceModifier(btn) {
+            document.querySelectorAll('.wage-modifier-btn.clearance').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const modifier = btn.dataset.clearance;
+            if (modifier === 'custom') {
+                document.getElementById('customClearanceInput').classList.remove('hidden');
+                currentClearanceModifier = parseFloat(document.getElementById('customClearancePercent').value) || 0;
+            } else {
+                document.getElementById('customClearanceInput').classList.add('hidden');
+                currentClearanceModifier = parseFloat(modifier);
+            }
+            updateWageAnalysis();
+        }
+
+        function updateWageMetros() {
+            const stateCode = document.getElementById('wageState').value;
+            const metroSelect = document.getElementById('wageMetro');
+            metroSelect.innerHTML = '<option value="statewide">Statewide Average</option>';
+            
+            if (stateCode && blsWageData[stateCode] && blsWageData[stateCode].metros) {
+                blsWageData[stateCode].metros.forEach(metro => {
+                    const option = document.createElement('option');
+                    option.value = metro;
+                    option.textContent = metro;
+                    metroSelect.appendChild(option);
+                });
+            }
+        }
+
+        function updateWageAnalysis() {
+            const stateCode = document.getElementById('wageState').value;
+            const positionType = document.getElementById('wagePositionType').value;
+            
+            let level = 'officer';
+            if (['site-supervisor', 'shift-supervisor', 'shift-lead'].includes(positionType)) level = 'supervisor';
+            else if (['account-manager', 'field-service-manager', 'operations-manager', 'district-manager', 'regional-manager'].includes(positionType)) level = 'manager';
+            
+            const titles = {
+                'officer': 'Security Guards (SOC 33-9032)',
+                'supervisor': 'First-Line Supervisors (SOC 33-1091)',
+                'manager': 'Managers, All Other (SOC 11-9199)'
+            };
+            document.getElementById('blsPositionTitle').textContent = stateCode ? 
+                `${titles[level]} - ${blsWageData[stateCode]?.name || 'Select State'}` : titles[level];
+            
+            let baseWages = [15.00, 17.00, 20.00, 24.00, 30.00];
+            if (stateCode && blsWageData[stateCode]) baseWages = blsWageData[stateCode][level];
+            
+            const totalModifier = 1 + (currentArmedModifier / 100) + (currentClearanceModifier / 100);
+            const adjustedWages = baseWages.map(w => w * totalModifier);
+            
+            document.getElementById('blsP10').textContent = formatCurrency(adjustedWages[0]);
+            document.getElementById('blsP25').textContent = formatCurrency(adjustedWages[1]);
+            document.getElementById('blsP50').textContent = formatCurrency(adjustedWages[2]);
+            document.getElementById('blsP75').textContent = formatCurrency(adjustedWages[3]);
+            document.getElementById('blsP90').textContent = formatCurrency(adjustedWages[4]);
+            
+            const modifierNote = document.getElementById('modifierAppliedNote');
+            const modifierDesc = document.getElementById('modifierDescription');
+            if (currentArmedModifier > 0 || currentClearanceModifier > 0) {
+                let desc = [];
+                if (currentArmedModifier > 0) desc.push(`Armed +${currentArmedModifier}%`);
+                if (currentClearanceModifier > 0) desc.push(`Clearance +${currentClearanceModifier}%`);
+                modifierDesc.textContent = desc.join(', ') + ` = Total +${Math.round((totalModifier - 1) * 100)}%`;
+                modifierNote.style.display = 'block';
+            } else {
+                modifierNote.style.display = 'none';
+            }
+            
+            updateSearchUrls();
+            updateWageComparison();
+            document.getElementById('suggestedRange').textContent = `${formatCurrency(adjustedWages[1])} - ${formatCurrency(adjustedWages[3])}/hr`;
+        }
+
+        function updateSearchUrls() {
+            const stateCode = document.getElementById('wageState').value;
+            const positionType = document.getElementById('wagePositionType').value;
+            const metro = document.getElementById('wageMetro').value;
+            
+            const positionNames = {
+                'unarmed-officer': 'Security Officer', 'armed-officer': 'Armed Security Officer',
+                'unarmed-guard': 'Security Guard', 'armed-guard': 'Armed Security Guard',
+                'site-supervisor': 'Security Site Supervisor', 'shift-supervisor': 'Security Shift Supervisor',
+                'shift-lead': 'Security Shift Lead', 'account-manager': 'Security Account Manager',
+                'field-service-manager': 'Security Field Service Manager', 'operations-manager': 'Security Operations Manager',
+                'district-manager': 'Security District Manager', 'regional-manager': 'Security Regional Manager'
+            };
+            
+            const searchPosition = encodeURIComponent(positionNames[positionType] || 'Security Officer');
+            const location = metro !== 'statewide' ? metro : (blsWageData[stateCode]?.name || '');
+            const searchLocation = encodeURIComponent(location);
+            
+            document.getElementById('searchIndeed').href = `https://www.indeed.com/jobs?q=${searchPosition}&l=${searchLocation}`;
+            document.getElementById('searchZipRecruiter').href = `https://www.ziprecruiter.com/jobs-search?search=${searchPosition}&location=${searchLocation}`;
+            document.getElementById('searchLinkedIn').href = `https://www.linkedin.com/jobs/search/?keywords=${searchPosition}&location=${searchLocation}`;
+            document.getElementById('searchGlassdoor').href = `https://www.glassdoor.com/Job/jobs.htm?sc.keyword=${searchPosition}&locT=C&locKeyword=${searchLocation}`;
+            document.getElementById('searchUSAJobs').href = `https://www.usajobs.gov/Search/Results?k=${searchPosition}&l=${searchLocation}`;
+        }
+
+        function showFindingForm() {
+            document.getElementById('findingFormContainer').classList.remove('hidden');
+            editingFindingIndex = -1;
+            document.getElementById('findingSource').value = 'Indeed';
+            document.getElementById('findingCompany').value = '';
+            document.getElementById('findingPosition').value = '';
+            document.getElementById('findingWage').value = '';
+            document.getElementById('findingDate').value = new Date().toISOString().slice(0, 10);
+            document.getElementById('findingLink').value = '';
+            document.getElementById('findingNotes').value = '';
+        }
+
+        function cancelFinding() {
+            document.getElementById('findingFormContainer').classList.add('hidden');
+            editingFindingIndex = -1;
+        }
+
+        function saveFinding() {
+            const finding = {
+                source: document.getElementById('findingSource').value,
+                company: document.getElementById('findingCompany').value,
+                position: document.getElementById('findingPosition').value,
+                wage: parseFloat(document.getElementById('findingWage').value) || 0,
+                date: document.getElementById('findingDate').value,
+                link: document.getElementById('findingLink').value,
+                notes: document.getElementById('findingNotes').value
+            };
+            
+            if (!finding.company || finding.wage <= 0) {
+                alert('Please enter at least a company name and wage.');
+                return;
+            }
+            
+            if (editingFindingIndex >= 0) wageFindings[editingFindingIndex] = finding;
+            else wageFindings.push(finding);
+            
+            localStorage.setItem('wageFindings', JSON.stringify(wageFindings));
+            cancelFinding();
+            renderFindingsTable();
+            updateWageComparison();
+        }
+
+        function editFinding(index) {
+            editingFindingIndex = index;
+            const finding = wageFindings[index];
+            document.getElementById('findingSource').value = finding.source;
+            document.getElementById('findingCompany').value = finding.company;
+            document.getElementById('findingPosition').value = finding.position;
+            document.getElementById('findingWage').value = finding.wage;
+            document.getElementById('findingDate').value = finding.date;
+            document.getElementById('findingLink').value = finding.link;
+            document.getElementById('findingNotes').value = finding.notes;
+            document.getElementById('findingFormContainer').classList.remove('hidden');
+        }
+
+        function deleteFinding(index) {
+            if (confirm('Delete this finding?')) {
+                wageFindings.splice(index, 1);
+                localStorage.setItem('wageFindings', JSON.stringify(wageFindings));
+                renderFindingsTable();
+                updateWageComparison();
+            }
+        }
+
+        function clearAllFindings() {
+            if (confirm('Are you sure you want to delete all findings? This cannot be undone.')) {
+                wageFindings = [];
+                localStorage.removeItem('wageFindings');
+                renderFindingsTable();
+                updateWageComparison();
+            }
+        }
+
+        function renderFindingsTable() {
+            const tbody = document.getElementById('findingsTableBody');
+            const noFindings = document.getElementById('noFindings');
+            const clearBtn = document.getElementById('clearFindingsBtn');
+            const countEl = document.getElementById('findingsCount');
+            
+            tbody.innerHTML = '';
+            
+            if (wageFindings.length === 0) {
+                noFindings.style.display = 'block';
+                clearBtn.style.display = 'none';
+                countEl.textContent = '0 findings saved';
+            } else {
+                noFindings.style.display = 'none';
+                clearBtn.style.display = 'inline-block';
+                countEl.textContent = `${wageFindings.length} finding${wageFindings.length !== 1 ? 's' : ''} saved`;
+                
+                wageFindings.forEach((finding, index) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${finding.source}</td>
+                        <td>${finding.company}</td>
+                        <td>${finding.position}</td>
+                        <td class="wage-cell">${formatCurrency(finding.wage)}/hr</td>
+                        <td>${finding.date ? new Date(finding.date).toLocaleDateString() : '-'}</td>
+                        <td class="link-cell">${finding.link ? `<a href="${finding.link}" target="_blank">🔗</a>` : '-'}</td>
+                        <td>${finding.notes || '-'}</td>
+                        <td class="actions-cell">
+                            <button onclick="editFinding(${index})" title="Edit">✏️</button>
+                            <button onclick="deleteFinding(${index})" title="Delete">🗑️</button>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+        }
+
+        function populateWagePositionDropdowns() {
+            const positions = getPositionData();
+            const compareSelect = document.getElementById('wageComparePosition');
+            const applySelect = document.getElementById('applyToPosition');
+            
+            compareSelect.innerHTML = '<option value="">-- Select Position --</option>';
+            applySelect.innerHTML = '<option value="">-- Select Position to Update --</option>';
+            
+            positions.forEach((pos, idx) => {
+                const option1 = document.createElement('option');
+                option1.value = idx;
+                option1.textContent = `${pos.name} - ${formatCurrency(pos.payRate)}/hr`;
+                compareSelect.appendChild(option1);
+                
+                const option2 = document.createElement('option');
+                option2.value = idx;
+                option2.textContent = `${pos.name} - ${formatCurrency(pos.payRate)}/hr`;
+                applySelect.appendChild(option2);
+            });
+        }
+
+        function loadPositionRate() {
+            const select = document.getElementById('wageComparePosition');
+            const idx = parseInt(select.value);
+            if (!isNaN(idx)) {
+                const positions = getPositionData();
+                if (positions[idx]) {
+                    document.getElementById('wageCompareRate').value = positions[idx].payRate;
+                    updateWageComparison();
+                }
+            }
+        }
+
+        function updateWageComparison() {
+            const yourRate = parseFloat(document.getElementById('wageCompareRate').value) || 0;
+            const stateCode = document.getElementById('wageState').value;
+            const positionType = document.getElementById('wagePositionType').value;
+            
+            let level = 'officer';
+            if (['site-supervisor', 'shift-supervisor', 'shift-lead'].includes(positionType)) level = 'supervisor';
+            else if (['account-manager', 'field-service-manager', 'operations-manager', 'district-manager', 'regional-manager'].includes(positionType)) level = 'manager';
+            
+            let blsMedian = 20.00;
+            if (stateCode && blsWageData[stateCode]) {
+                const totalModifier = 1 + (currentArmedModifier / 100) + (currentClearanceModifier / 100);
+                blsMedian = blsWageData[stateCode][level][2] * totalModifier;
+            }
+            
+            let researchAvg = 0;
+            if (wageFindings.length > 0) {
+                const sum = wageFindings.reduce((acc, f) => acc + (f.wage || 0), 0);
+                researchAvg = sum / wageFindings.length;
+            }
+            
+            document.getElementById('comparisonBLS').textContent = formatCurrency(blsMedian) + '/hr';
+            document.getElementById('comparisonBLSAnnual').textContent = formatCurrency(blsMedian * 2080) + '/year';
+            document.getElementById('comparisonResearch').textContent = researchAvg > 0 ? formatCurrency(researchAvg) + '/hr' : '--';
+            document.getElementById('comparisonResearchAnnual').textContent = researchAvg > 0 ? formatCurrency(researchAvg * 2080) + '/year' : '';
+            document.getElementById('comparisonYours').textContent = yourRate > 0 ? formatCurrency(yourRate) + '/hr' : '--';
+            document.getElementById('comparisonYoursAnnual').textContent = yourRate > 0 ? formatCurrency(yourRate * 2080) + '/year' : '';
+            
+            const diffEl = document.getElementById('comparisonDiff');
+            if (yourRate > 0 && researchAvg > 0) {
+                const diff = ((yourRate - researchAvg) / researchAvg) * 100;
+                diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(1) + '%';
+                diffEl.className = 'wage-comparison-diff ' + (diff >= 0 ? 'positive' : 'negative');
+            } else if (yourRate > 0 && blsMedian > 0) {
+                const diff = ((yourRate - blsMedian) / blsMedian) * 100;
+                diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(1) + '% vs BLS';
+                diffEl.className = 'wage-comparison-diff ' + (diff >= 0 ? 'positive' : 'negative');
+            } else {
+                diffEl.textContent = '';
+                diffEl.className = 'wage-comparison-diff';
+            }
+            
+            if (document.getElementById('rateToApply').value === '0' || document.getElementById('rateToApply').value === '') {
+                document.getElementById('rateToApply').value = researchAvg > 0 ? researchAvg.toFixed(2) : blsMedian.toFixed(2);
+            }
+        }
+
+        function applyRateToPosition() {
+            const positionIdx = document.getElementById('applyToPosition').value;
+            const rateToApply = parseFloat(document.getElementById('rateToApply').value) || 0;
+            
+            if (positionIdx === '') { alert('Please select a position to update.'); return; }
+            if (rateToApply <= 0) { alert('Please enter a valid rate to apply.'); return; }
+            
+            const positions = document.querySelectorAll('.position-row');
+            positions.forEach((row, idx) => {
+                if (idx == positionIdx) {
+                    const rowId = row.id.split('-')[1];
+                    const payRateInput = document.getElementById(`payRate-${rowId}`);
+                    if (payRateInput) {
+                        payRateInput.value = rateToApply.toFixed(2);
+                        updateBillRate(rowId);
+                        updatePositionSummary();
+                        calculate();
+                    }
+                }
+            });
+            
+            alert(`Pay rate updated to ${formatCurrency(rateToApply)}/hr. Check the Physical Personnel section.`);
+            populateWagePositionDropdowns();
+        }
+
+        function exportWageAnalysis() {
+            const stateCode = document.getElementById('wageState').value;
+            const stateName = stateCode ? blsWageData[stateCode].name : 'Not Selected';
+            const metro = document.getElementById('wageMetro').value;
+            const positionType = document.getElementById('wagePositionType').value;
+            
+            let csv = 'WAGE ANALYSIS REPORT\n';
+            csv += 'Generated,' + new Date().toLocaleString() + '\n\n';
+            csv += 'POSITION & LOCATION\n';
+            csv += 'Position Type,' + positionType + '\n';
+            csv += 'Armed Modifier,+' + currentArmedModifier + '%\n';
+            csv += 'Clearance Modifier,+' + currentClearanceModifier + '%\n';
+            csv += 'State,' + stateName + '\n';
+            csv += 'Metro Area,' + metro + '\n\n';
+            csv += 'BLS WAGE DATA (with modifiers)\n';
+            csv += 'Percentile,Hourly Wage\n';
+            csv += '10th,' + document.getElementById('blsP10').textContent + '\n';
+            csv += '25th,' + document.getElementById('blsP25').textContent + '\n';
+            csv += 'Median,' + document.getElementById('blsP50').textContent + '\n';
+            csv += '75th,' + document.getElementById('blsP75').textContent + '\n';
+            csv += '90th,' + document.getElementById('blsP90').textContent + '\n\n';
+            csv += 'RESEARCH FINDINGS\n';
+            csv += 'Source,Company,Position,Wage,Date,Link,Notes\n';
+            wageFindings.forEach(f => {
+                csv += `${f.source},"${f.company}","${f.position}",${formatCurrency(f.wage)},${f.date},"${f.link || ''}","${f.notes || ''}"\n`;
+            });
+            csv += '\nCOMPARISON\n';
+            csv += 'BLS Median,' + document.getElementById('comparisonBLS').textContent + '\n';
+            csv += 'Research Average,' + document.getElementById('comparisonResearch').textContent + '\n';
+            csv += 'Your Rate,' + document.getElementById('comparisonYours').textContent + '\n';
+            csv += 'Suggested Range,' + document.getElementById('suggestedRange').textContent + '\n';
+            
+            try {
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', 'wage_analysis_' + new Date().toISOString().slice(0, 10) + '.csv');
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            } catch (e) {
+                alert('Unable to export file.');
                 console.error(e);
             }
         }
